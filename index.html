@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="leaflet.css" />
+    <script src="leaflet.js"></script>
+    <style>
+        #map {
+            position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+            background-color: #0fa8d2;
+        }
+    </style>
+</head>
+<body>
+    <div id = "map"></div>
+    <script>
+// GTA Map
+        var map = L.map('map', {
+        crs: L.CRS.Simple,
+        minZoom: -3.0
+    });
+    var bounds = [[0,0], [8000,8000]];
+    var image = L.imageOverlay('images/GTAV8kRes.png', bounds).addTo(map);
+    map.fitBounds(bounds);
+//Restaurant Pings
+    var harmonyDiner = L.marker([4311, 4440]).bindPopup('Harmony Diner').addTo(map);
+    var mojitoInn = L.marker([6712, 3593]).bindPopup('Mojito Inn').addTo(map);
+    var uwuCafe = L.marker([1923, 3293]).bindPopup('The UwU Cafe').addTo(map);
+    var burgerShot = L.marker([2025, 2910]).bindPopup('Burger Shot').addTo(map);
+    var maldinis = L.marker([2037, 3291]).bindPopup('Maldinis').addTo(map);
+    var roostersRest = L.marker([2790, 3520]).bindPopup('Roosters Rest').addTo(map);
+//Corner Stores
+    var flopsShop = L.marker([1867, 3285]).bindPopup('Flops Shop').addTo(map);
+    </script>
+</body>
+</html>
