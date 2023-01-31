@@ -40,24 +40,30 @@
 //Pet Stores
     var littlePaws = L.marker([4318, 4339]).bindPopup('Little Paws').addTo(map);
 //Layers
-    var CornerStores = L.layerGroup([flopsShop]);
+    var cornerStores = L.layerGroup([flopsShop]);
     var restaurants = L.layerGroup([burgerShot, uwuCafe, roostersRest, mojitoInn, harmonyDiner, maldinis]);
     var noveltyShops = L.layerGroup([truthAndJustice]);
     var dispensaries = L.layerGroup([roostersReef]);
     var hardwareStores = L.layerGroup([harmonyHardware, hoeDepot]);
     var petStores = L.layerGroup([littlePaws]);
 //Leaflet Layer Control
+    map.addLayer(restaurants)
+    map.addLayer(cornerStores)
+    map.addLayer(noveltyShops)
+    map.addLayer(dispensaries)
+    map.addLayer(hardwareStores)
+    map.addLayer(petStores)
     var baseMaps = {
         'Los Santos': map
-    }
+    };
     var overlayMaps = {
         'Restaurants': restaurants, 
-        'Corner Stores (Bandaids, Armor)': CornerStores, 
+        'Corner Stores (Bandaids, Armor)': cornerStores, 
         'Novelty Shops (Plushies, Collectables)': noveltyShops, 
         'Dispensaries (Joints, Coffee)': dispensaries, 
         'Hardware Stores (Tools)': hardwareStores, 
-        'Pet Stores': littlePaws,
-    }
+        'Pet Stores': petStores,
+    };
     L.control.layers(baseMaps, overlayMaps).addTo(map);
     </script>
 </body>
