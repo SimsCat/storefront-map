@@ -32,20 +32,26 @@
     var flopsShop = L.marker([1865, 3282]).bindPopup('Flops Shop').addTo(map);
 //Novelty Shops
     var truthAndJustice = L.marker([6620, 3490]).bindPopup('Truth and Justice Floral').addTo(map);
+    var plusOne = L.marker([2282.75, 4441]).bindPopup('Plus One').addTo(map);
 //Dispensaries
     var roostersReef = L.marker([2752, 3619]).bindPopup('Roosters Reef').addTo(map);
 //Hardware Stores
     var harmonyHardware = L.marker([4365, 4457]).bindPopup('Harmony Hardware').addTo(map);
     var hoeDepot = L.marker([2315.5, 4420.5]).bindPopup('Hoe Depot').addTo(map);
+    var lizardDix = L.marker([5000, 4790]).bindPopup('Lizard Dix').addTo(map);
 //Pet Stores
     var littlePaws = L.marker([4318, 4339]).bindPopup('Little Paws').addTo(map);
+//Recreation
+    var horage = L.marker([2417, 4420]).bindPopup('HORAGE').addTo(map);
+    var norman = L.marker([5930, 5870]).bindPopup('Normans Dumbass House').addTo(map);
 //Layers
     var cornerStores = L.layerGroup([flopsShop]);
     var restaurants = L.layerGroup([burgerShot, uwuCafe, roostersRest, mojitoInn, harmonyDiner, maldinis]);
-    var noveltyShops = L.layerGroup([truthAndJustice]);
+    var noveltyShops = L.layerGroup([truthAndJustice, plusOne]);
     var dispensaries = L.layerGroup([roostersReef]);
-    var hardwareStores = L.layerGroup([harmonyHardware, hoeDepot]);
+    var hardwareStores = L.layerGroup([harmonyHardware, hoeDepot, lizardDix]);
     var petStores = L.layerGroup([littlePaws]);
+    var recreation = L.layerGroup([horage]);
 //Leaflet Layer Control
     map.addLayer(restaurants)
     map.addLayer(cornerStores)
@@ -53,18 +59,17 @@
     map.addLayer(dispensaries)
     map.addLayer(hardwareStores)
     map.addLayer(petStores)
-    var baseMaps = {
-        'Los Santos': map
-    };
+    map.addLayer(recreation)
     var overlayMaps = {
-        'Restaurants': restaurants, 
+        'Restaurants (Staffed Food Establishments)': restaurants, 
         'Corner Stores (Bandaids, Armor)': cornerStores, 
         'Novelty Shops (Plushies, Collectables)': noveltyShops, 
         'Dispensaries (Joints, Coffee)': dispensaries, 
-        'Hardware Stores (Tools)': hardwareStores, 
-        'Pet Stores': petStores,
+        'Supply Stores (Tools, Supplies)': hardwareStores, 
+        'Pet Stores (For Pets)': petStores,
+        'Recreational (You know, Fun Stuff)': recreation,
     };
-    L.control.layers(baseMaps, overlayMaps).addTo(map);
+    L.control.layers(0, overlayMaps).addTo(map);
     </script>
 </body>
 </html>
