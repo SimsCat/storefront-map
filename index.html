@@ -28,6 +28,7 @@
     var burgerShot = L.marker([2025, 2910]).bindPopup('Burger Shot').addTo(map);
     var maldinis = L.marker([2037, 3291]).bindPopup('Maldinis').addTo(map);
     var roostersRest = L.marker([2790, 3520]).bindPopup('Roosters Rest').addTo(map);
+    var shrugWay = L.marker([2376, 4469]).bindPopup('Shrug Way').addTo(map);
 //Corner Stores
     var flopsShop = L.marker([1865, 3282]).bindPopup('Flops Shop').addTo(map);
     var bettaLife = L.marker([2313, 4404]).bindPopup('Betta Life').addTo(map);
@@ -43,19 +44,24 @@
     var lizardDix = L.marker([5000, 4790]).bindPopup('Lizard Dix').addTo(map);
 //Pet Stores
     var littlePaws = L.marker([4318, 4339]).bindPopup('Little Paws').addTo(map);
+    var paletoPets = L.marker([])
 //Recreation
     var horage = L.marker([2417, 4420]).bindPopup('HORAGE').addTo(map);
     var bongjour = L.marker([2037, 3243]).bindPopup('Bongjour').addTo(map);
+//Electronics
+    var digitalDenLittleSeoul = L.marker([])
+    var digitalDenMirrorPark = L.marker([2299, 4400]).bindPopup('Digital Den (Mirror Park)').addTo(map);
 //Stuff that makes me giggle
     //var norman = L.marker([5930, 5870]).bindPopup('Normans Dumbass House').addTo(map);
 //Layers
     var cornerStores = L.layerGroup([flopsShop, bettaLife]);
-    var restaurants = L.layerGroup([burgerShot, uwuCafe, roostersRest, mojitoInn, harmonyDiner, maldinis]);
+    var restaurants = L.layerGroup([burgerShot, uwuCafe, roostersRest, mojitoInn, harmonyDiner, maldinis, shrugWay]);
     var noveltyShops = L.layerGroup([truthAndJustice, plusOne]);
     var dispensaries = L.layerGroup([roostersReef, dejaBrew]);
     var hardwareStores = L.layerGroup([harmonyHardware, hoeDepot, lizardDix]);
     var petStores = L.layerGroup([littlePaws]);
     var recreation = L.layerGroup([horage, bongjour]);
+    var electronics = L.layerGroup([digitalDenMirrorPark]);
 //Leaflet Layer Control
     map.addLayer(restaurants)
     map.addLayer(cornerStores)
@@ -64,6 +70,7 @@
     map.addLayer(hardwareStores)
     map.addLayer(petStores)
     map.addLayer(recreation)
+    map.addLayer(electronics)
     var overlayMaps = {
         'Restaurants (Staffed Food Establishments)': restaurants, 
         'Corner Stores (Bandaids, Armor)': cornerStores, 
@@ -72,6 +79,7 @@
         'Supply Stores (Tools, Supplies)': hardwareStores, 
         'Pet Stores (For Pets)': petStores,
         'Recreational (You know, Fun Stuff)': recreation,
+        'Electronics (Phones, Laptops, VPNs)': electronics,
     };
     L.control.layers(0, overlayMaps).addTo(map);
     </script>
