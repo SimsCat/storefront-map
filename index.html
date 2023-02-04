@@ -13,7 +13,7 @@
 <body>
     <div id = "map"></div>
     <script>
-// GTA Map
+//====GTA Map====
         var map = L.map('map', {
         crs: L.CRS.Simple,
         minZoom: -3.0
@@ -21,71 +21,167 @@
     var bounds = [[0,0], [8000,8000]];
     var image = L.imageOverlay('images/GTAV8kRes.png', bounds).addTo(map);
     map.fitBounds(bounds);
-//Restaurants
-    var harmonyDiner = L.marker([4311, 4440]).bindPopup('Harmony Diner').addTo(map);
-    var mojitoInn = L.marker([6712, 3593]).bindPopup('Mojito Inn').addTo(map);
-    var uwuCafe = L.marker([1923, 3293]).bindPopup('The UwU Cafe').addTo(map);
-    var burgerShot = L.marker([2025, 2910]).bindPopup('Burger Shot').addTo(map);
-    var maldinis = L.marker([2037, 3291]).bindPopup('Maldinis').addTo(map);
-    var roostersRest = L.marker([2800, 3565]).bindPopup('Roosters Rest').addTo(map);
-    var shrugWay = L.marker([2376, 4469]).bindPopup('Shrug Way').addTo(map);
-//Corner Stores
-    var flopsShop = L.marker([1865, 3282]).bindPopup('Flops Shop').addTo(map);
-    var bettaLife = L.marker([2313, 4404]).bindPopup('Betta Life').addTo(map);
-    var thePatchworkEmporium = L.marker([6717, 3561]).bindPopup('The Patchwork Emporium').addTo(map);
-    var sweetRemedies = L.marker([2673, 3917]).bindPopup('Sweet Remedies').addTo(map);
-//Novelty Shops
-    var truthAndJustice = L.marker([6620, 3490]).bindPopup('Truth and Justice Floral').addTo(map);
-    var plusOne = L.marker([2283.75, 4442]).bindPopup('Plus One').addTo(map);
-    var mcmoos = L.marker([6690, 3540]).bindPopup('McMoos').addTo(map);
-    var lemonHayes = L.marker([6766, 3647]).bindPopup('Lemonhayes').addTo(map);
-    var shitsandgiggles = L.marker([2720, 3893]).bindPopup('Sh!ts and G!ggles').addTo(map);
-    var bishopsWtf = L.marker([2750, 3710]).bindPopup("Bishop's WTF").addTo(map);
-    var thatsWeird = L.marker([2750, 3398]).bindPopup("That's Weird").addTo(map);
-    var blvckcraft = L.marker([2764, 3190]).bindPopup('BLVCKCRAFT').addTo(map);
-    var crowex = L.marker([2755, 3778]).bindPopup('Crowex').addTo(map);
-    var maskRave = L.marker([2790, 3832]).bindPopup('Mask Rave').addTo(map);
-//Dispensaries
-    var roostersReef = L.marker([2755, 3659]).bindPopup('Roosters Reef').addTo(map);
-    var dejaBrew = L.marker([2020, 3240]).bindPopup('Deja Brew').addTo(map);
-//Supply Stores
-    var harmonyHardware = L.marker([4365, 4457]).bindPopup('Harmony Hardware').addTo(map);
-    var hoeDepot = L.marker([2315.5, 4420.5]).bindPopup('Hoe Depot').addTo(map);
-    var lizardDix = L.marker([5000, 4790]).bindPopup('Lizard Dix').addTo(map);
-    var pureLube = L.marker([6728.5, 3609]).bindPopup('Pure Lube').addTo(map);
-    var briansBeautyBoutique = L.marker([2674.5, 3912]).bindPopup("Brian's Beauty Boutique").addTo(map);
-    var vinewoodVideo = L.marker([2706, 3827]).bindPopup('Vinewood Video').addTo(map);
-    var planBee = L.marker([2759.5, 3553.5]).bindPopup('Plan Bee').addTo(map);
-    var bigPussysLocksmith = L.marker([2759.5, 3549]).bindPopup("Big Pussy's Locksmith").addTo(map);
-    var bilgeAndCo  = L.marker([2785, 3357]).bindPopup("Bilge & Co.").addTo(map);
-    var hardOnTools = L.marker([2760.5, 3765]).bindPopup('Hard On Tools').addTo(map);
-//Pet Stores
-    var littlePaws = L.marker([4318, 4339]).bindPopup('Little Paws').addTo(map);
-    var paletoPets = L.marker([6653.5, 3494.25]).bindPopup('Paleto Pets').addTo(map);
-//Recreation
-    var horage = L.marker([2417, 4420]).bindPopup('HORAGE').addTo(map);
-    var bongjour = L.marker([2037, 3243]).bindPopup('Bongjour').addTo(map);
-    var pitchersVinewood = L.marker([2824, 3816]).bindPopup('Pitchers Vinewood').addTo(map);
-    var oakAndDagger = L.marker([2757, 3615]).bindPopup('Oak and Dagger').addTo(map);
-//Electronics
-    var digitalDenMirrorPark = L.marker([2299, 4400]).bindPopup('Digital Den (Mirror Park)').addTo(map);
-    var raysElectronics = L.marker([6773, 3655]).bindPopup('Rays Electronics').addTo(map);
-//Coffee House
-    var beanMachine = L.marker([2762, 3265]).bindPopup('Bean Machine').addTo(map);
-    var heroWine = L.marker([2841, 3605]).bindPopup('HeroWine').addTo(map);
-//Stuff that makes me giggle
+//====Restaurants====
+    var harmonyDiner = L.marker([4311, 4440], {
+        title: "The Harmony Diner",
+    }).bindPopup("<h1>The Harmony Diner</h1>").addTo(map);
+    var mojitoInn = L.marker([6712, 3593], {
+        title: "The Mojito Inn",
+    }).bindPopup("<h1>The Mojito Inn</h1>").addTo(map);
+    var uwuCafe = L.marker([1923, 3293], {
+        title: "The UwU Cafe",
+    }).bindPopup("<h1>The UwU Cafe</h1> <p>Have an UwU day!</p>").addTo(map);
+    var burgerSht = L.marker([2025, 2910], {
+        title: "Burgershot",
+    }).bindPopup("<h1>Burger Shot</h1> <p>Don't do Murder, Eat a Burger!</p>").addTo(map);
+    var maldinis = L.marker([2037, 3291], {
+        title: "Maldini's",
+    }).bindPopup("<h1>Maldini's</h1> <p>It's Femly</p>").addTo(map);
+    var roostersRest = L.marker([2800, 3565], {
+        title: "Rooster's Rest"
+    }).bindPopup("<h1>Rooster's Rest</h1> <p>Glory to the Cock!</p>").addTo(map);
+    var shrugWay = L.marker([2376, 4469], {
+        title: "Shrugway",
+    }).bindPopup("<h1>Shrugway</h1>").addTo(map);
+//====Corner Stores====
+    var flopsShop = L.marker([1865, 3282], {
+        title: "Flop's Shop",
+    }).bindPopup("<h1>Flop's Shop</h1><p>Bandages, Plot Armor, and Copium, Oh My!</p>").addTo(map);
+    var bettaLife = L.marker([2313, 4404], {
+        title: "Betta Life",
+    }).bindPopup("<h1>Betta Life</h1>").addTo(map);
+    var thePatchworkEmporium = L.marker([6717, 3561], {
+        title: "The Patchwork Emporium",
+    }).bindPopup("<h1>The Patchwork Emporium</h1><p>Custom Patches and Bandages!</p>").addTo(map);
+    var sweetRemedies = L.marker([2673, 3917], {
+        title: "Sweet Remedies",
+    }).bindPopup('<h1>Sweet Remedies</h1><p>Medically Beneficial Candies!</p> <img src="https://i.imgur.com/yZ1ai1q.jpeg" width="100%" height="100%" />').addTo(map);
+    var dougsDrugs = L.marker([1427.5, 3803], {
+        title: "Doug's Drugs",
+    }).bindPopup("<h1>Doug's Drugs</h1>").addTo(map);
+//====Novelty Shops====
+    var truthAndJustice = L.marker([6620, 3490], {
+        title: "Truth and Justice Floral"
+    }).bindPopup("<h1>Truth and Justice Floral</h1>").addTo(map);
+    var plusOne = L.marker([2283.75, 4442], {
+        title: "Plus One",
+    }).bindPopup("<h1>Plus One</h1>").addTo(map);
+    var mcmoos = L.marker([6690, 3540], {
+        title: "Mcmoo's",
+    }).bindPopup("<h1>Mcmoo's</h1><p><img src='https://i.imgur.com/sDceIWg.png' width=100% height=100% /> <p>A plushie for every occasion!</p>").addTo(map);
+    var lemonHayes = L.marker([6766, 3647], {
+        title: "Lemon Hayes"
+    }).bindPopup("<h1>Lemon Hayes</h1>").addTo(map);
+    var shitsandgiggles = L.marker([2720, 3893], {
+        title: "Sh!ts and G!ggles"
+    }).bindPopup("<h1>Sh!ts and G!ggles</h1>").addTo(map);
+    var bishopsWtf = L.marker([2750, 3710], {
+        title: "Bishop's WTF",
+    }).bindPopup("<h1>Bishop's WTF</h1>").addTo(map);
+    var thatsWeird = L.marker([2750, 3398, {
+        title: "That's Weird"
+    }]).bindPopup("<h1>That's Weird</h1><p>Spooky Solutions and Ghost Tours!</p>").addTo(map);
+    var blvckcraft = L.marker([2764, 3190], {
+        title: "BLVCKCRAFT"
+    }).bindPopup("<h1>BLVCKCRAFT</h1>").addTo(map);
+    var crowex = L.marker([2755, 3778], {
+        title: "Crowex",
+    }).bindPopup("<h1>Crowex</h1>").addTo(map);
+    var maskRave = L.marker([2790, 3832], {
+        title: "Mask Rave",
+    }).bindPopup("<h1>Mask Rave</h1>").addTo(map);
+//====Dispensaries====
+    var roostersReef = L.marker([2755, 3659], {
+        title: "Rooster's Reef",
+    }).bindPopup("<h1>Rooster's Reef</h1><p>Joints and Coffee, what else could you ask for?</p>").addTo(map);
+    var dejaBrew = L.marker([2020, 3240], {
+        title: "Deja Brew",
+    }).bindPopup("<h1>Deja Brew</h1>").addTo(map);
+//====Supply Stores====
+    var harmonyHardware = L.marker([4365, 4457], {
+        title: "Harmony Hardware",
+    }).bindPopup("<h1>Harmony Hardware</h1>").addTo(map);
+    var hoeDepot = L.marker([2315.5, 4420.5], {
+        title: "Hoe Depot",
+    }).bindPopup("<h1>Hoe Depot</h1>").addTo(map);
+    var lizardDix = L.marker([5000, 4790], {
+        title: "Lizard Dix"
+    }).bindPopup("<h1>Lizard Dix</h1>").addTo(map);
+    var pureLube = L.marker([6728.5, 3609], {
+        title: "Pure Lube",
+    }).bindPopup("<h1>Pure Lube</h1><p>Bike Armor and Repair Kits!</p>").addTo(map);
+    var briansBeautyBoutique = L.marker([2674.5, 3912], {
+        title: "Brian's Beauty Boutique",
+    }).bindPopup("<h1>Brian's Beauty Boutique</h1>").addTo(map);
+    var vinewoodVideo = L.marker([2706, 3827], {
+        title: "Vinewood Video",
+    }).bindPopup("<h1>Vinewood Video</h1><p>Lights, Cameras, Microphones, Action!</p>").addTo(map);
+    var planBee = L.marker([2759.5, 3553.5], {
+        title: "Plan Bee",
+    }).bindPopup("<h1>Plan Bee</h1><p>A Bee Keeper Paradise!</p>").addTo(map);
+    var bigPussysLocksmith = L.marker([2759.5, 3549], {
+        title: "Big Pussy's Locksmith"
+    }).bindPopup("<h1>Big Pussy's Locksmith</h1><p>").addTo(map);
+    var bilgeAndCo  = L.marker([2785, 3357], {
+        title: "Bilge & Co.",
+    }).bindPopup("<h1>Bilge & Co.</h1>").addTo(map);
+    var hardOnTools = L.marker([2760.5, 3765], {
+        title: "Hard On Tools",
+    }).bindPopup("<h1>Hard On Tools</h1>").addTo(map);
+//====Pet Stores====
+    var littlePaws = L.marker([4318, 4339], {
+        title: "Little Paws",
+    }).bindPopup("<h1>Little Paws</h1>").addTo(map);
+    var paletoPets = L.marker([6653.5, 3494.25], {
+        title: "Paleto Pets",
+    }).bindPopup("<h1>Paleto Pets</h1>").addTo(map);
+//====Recreation====
+    var horage = L.marker([2417, 4420], {
+        title: "HORAGE",
+    }).bindPopup("<h1>HORAGE</h1>").addTo(map);
+    var bongjour = L.marker([2037, 3243], {
+        title: "Bongjour",
+    }).bindPopup("<h1>Bongjour</h1>").addTo(map);
+    var pitchersVinewood = L.marker([2824, 3816], {
+        title: "Pitchers Vinewood",
+    }).bindPopup("<h1>Pitchers Vinewood</h1>").addTo(map);
+    var oakAndDagger = L.marker([2757, 3615], {
+        title: "Oak and Dagger",
+    }).bindPopup("<h1>Oak and Dagger</h1>").addTo(map);
+//====Electronics====
+    var digitalDenMirrorPark = L.marker([2299, 4400], {
+        title: "Digital Den (Mirror Park)"
+    }).bindPopup("<h1>Digital Den (Mirror Park)</h1>").addTo(map);
+    var raysElectronics = L.marker([6773, 3655], {
+        title: "Ray's Electronics",
+    }).bindPopup("<h1>Ray's Electronics</h1>").addTo(map);
+//====Coffee House====
+    var beanMachine = L.marker([2762, 3265], {
+        title: "Bean Machine",
+    }).bindPopup("<h1>Bean Machine</h1>").addTo(map);
+    var heroWine = L.marker([2841, 3605], {
+        title: "HeroWine",
+    }).bindPopup("<h1>HeroWine</h1><p>Wine Bottles and Wine Glasses, so fancy!</p>").addTo(map);
+    var queenies = L.marker([1742.25, 2822.5], {
+        title: "Queenies",
+    }).bindPopup("<h1>Bean Machine</h1>").addTo(map);
+//====Stuff that makes me giggle====
     //var norman = L.marker([5930, 5870]).bindPopup('Normans Dumbass House').addTo(map);
-//Layers
+    //var center = L.marker ([4000, 4000]).bindPopup('Center of Map').addTo(map);
+    var marker = new L.marker([39.5, -77.3], { opacity: 0.01 }); //opacity may be set to zero
+marker.bindTooltip("<h2>This site is still a work in progress, contact @MelarkyNP on twitter for info/attribution to your storefront's marker!</h2>", {permanent: true, className: "my-label", offset: [0, 0] });
+marker.addTo(map);
+//====Layers====
     var cornerStores = L.layerGroup([flopsShop, bettaLife, thePatchworkEmporium, sweetRemedies]);
-    var restaurants = L.layerGroup([burgerShot, uwuCafe, roostersRest, mojitoInn, harmonyDiner, maldinis, shrugWay]);
+    var restaurants = L.layerGroup([burgerSht, uwuCafe, roostersRest, mojitoInn, harmonyDiner, maldinis, shrugWay]);
     var noveltyShops = L.layerGroup([truthAndJustice, plusOne, mcmoos, lemonHayes, shitsandgiggles, bishopsWtf, thatsWeird, blvckcraft, crowex, maskRave]);
     var dispensaries = L.layerGroup([roostersReef, dejaBrew]);
     var hardwareStores = L.layerGroup([harmonyHardware, hoeDepot, lizardDix, pureLube, briansBeautyBoutique, vinewoodVideo, planBee, bigPussysLocksmith, bilgeAndCo, hardOnTools]);
     var petStores = L.layerGroup([littlePaws, paletoPets]);
     var recreation = L.layerGroup([horage, bongjour, pitchersVinewood, oakAndDagger]);
     var electronics = L.layerGroup([digitalDenMirrorPark, raysElectronics]);
-    var coffeehouse = L.layerGroup([beanMachine, heroWine])
-//Leaflet Layer Control
+    var coffeehouse = L.layerGroup([beanMachine, heroWine, queenies])
+//====Leaflet Layer Control====
     map.addLayer(restaurants)
     map.addLayer(cornerStores)
     map.addLayer(noveltyShops)
