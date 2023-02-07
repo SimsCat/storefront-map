@@ -71,6 +71,13 @@ var whiteIcon = L.icon({
     shadowAnchor: [12, 41],
     popupAnchor: [0, -41],
 })
+var tealIcon = L.icon({
+    iconUrl: "images/marker-teal.png",
+    shadowUrl: "images/marker-shadow.png",
+    iconAnchor: [12, 41],
+    shadowAnchor: [12, 41],
+    popupAnchor: [0, -41],
+})
 //==================== Restaurants ====================
     var harmonyDiner = L.marker([4311, 4440], {
         title: "The Harmony Diner",
@@ -147,6 +154,9 @@ var whiteIcon = L.icon({
     var maskRave = L.marker([2790, 3832], {
         title: "Mask Rave",
     }).bindPopup("<h1>Mask Rave</h1>").addTo(map);
+    var theGiftShop = L.marker([1903, 3280], {
+        title: "The Gift Shop",
+    }).bindPopup("<h1>The Gift Shop</h1>").addTo(map);
 //====================== Dispensaries ======================
     var roostersReef = L.marker([2755, 3659], {
         title: "Rooster's Reef",
@@ -205,6 +215,10 @@ var whiteIcon = L.icon({
         title: "Greener Pastures",
         icon: blackIcon,
     }).bindPopup("<h1>Greener Pastures</h1>").addTo(map);
+    var recyclingCenter = L.marker([4615, 5182], {
+        title: "Sandy Shores Recycling Center",
+        icon: blackIcon,
+    }).bindPopup("<h1>Sandy Shores Recycling Center</h1><img src='https://i.imgur.com/O0xSyQ0.jpeg' width=100% height=100% />").addTo(map);
 //==================== Pet Stores ====================
     var littlePaws = L.marker([4318, 4339], {
         title: "Little Paws",
@@ -253,9 +267,9 @@ var whiteIcon = L.icon({
         icon: purpleIcon,
     }).bindPopup("<h1>Digital Den (Little Seoul)</h1>").addTo(map);
     var raysElectronics = L.marker([6773, 3655], {
-        title: "Ray's Electronics",
+        title: "Ericson's Electronics",
         icon: purpleIcon,
-    }).bindPopup("<h1>Ray's Electronics</h1>").addTo(map);
+    }).bindPopup("<h1>Ericson's Electronics</h1>").addTo(map);
     var amazoom = L.marker([1886, 3280], {
         title: "Amazoom",
         icon: purpleIcon,
@@ -277,6 +291,19 @@ var whiteIcon = L.icon({
         title: "Pandia Expresso",
         icon: orangeIcon,
     }).bindPopup("<h1>Pandia Expresso</h1><p>Coffee & Cigarettes</p>").addTo(map);
+//==================== Repair Shops ====================
+    var hayesAuto = L.marker([2316, 2751], {
+        title: "Hayes Auto Body Repairs",
+        icon: tealIcon,
+    }).bindPopup("<h1>Hayes Auto Body Repairs</h1>").addTo(map);
+    var tunerShop = L.marker([645, 3760], {
+        title: "The 6STR Tuner Shop",
+        icon: tealIcon,
+    }).bindPopup("<h1>The 6STR Tuner Shop</h1>").addTo(map);
+    var ironHog = L.marker([4747, 4808], {
+        title: "Iron Hog Repairs",
+        icon: tealIcon,
+    }).bindPopup('<h1>Iron Hog Repairs</h1>').addTo(map);
 //==================== Easter Eggs ====================
     //var norman = L.marker([5930, 5870]).bindPopup('Normans Dumbass House').addTo(map);
     //var center = L.marker ([4000, 4000]).bindPopup('Center of Map').addTo(map);
@@ -311,6 +338,7 @@ marker.addTo(map);
         blvckcraft,
         crowex,
         maskRave,
+        theGiftShop,
     ]);
     var dispensaries = L.layerGroup([
         roostersReef,
@@ -329,6 +357,7 @@ marker.addTo(map);
         hardOnTools,
         deezNotes,
         greenerPastures,
+        recyclingCenter,
     ]);
     var petStores = L.layerGroup([
         littlePaws,
@@ -349,11 +378,17 @@ marker.addTo(map);
         digitalDenLittleSeoul,
         amazoom,
     ]);
-    var coffeehouse = L.layerGroup([beanMachine,
+    var coffeehouse = L.layerGroup([
+        beanMachine,
         heroWine,
         queenies,
         pandiaExpresso,
-]);
+    ]);
+    var repairShop = L.layerGroup([
+        hayesAuto,
+        tunerShop,
+        ironHog,
+    ]);
 //==================== Leaflet Layer Control ====================
     map.addLayer(restaurants)
     map.addLayer(cornerStores)
@@ -364,6 +399,7 @@ marker.addTo(map);
     map.addLayer(recreation)
     map.addLayer(electronics)
     map.addLayer(coffeehouse)
+    map.addLayer(repairShop)
     var overlayMaps = {
         'Restaurants (Staffed Food Establishments)': restaurants, 
         'Corner Stores (Bandaids, Armor)': cornerStores, 
@@ -374,6 +410,7 @@ marker.addTo(map);
         'Recreational (You know, Fun Stuff)': recreation,
         'Electronics (Phones, Laptops, VPNs)': electronics,
         'Coffee Houses & Beverage (Coffee, Wine)': coffeehouse,
+        'Mechanics & Repair Shops': repairShop,
     };
     L.control.layers(0, overlayMaps).addTo(map);
     </script>
