@@ -252,6 +252,10 @@ var tealIcon = L.icon({
         title: "The Pit Stop",
         icon: blackIcon
     }).bindPopup("<h1>The Pit Stop</h1><img src='https://i.imgur.com/nWyHnot.png' width=100% height=100% />").addTo(map);
+    var nailedItHardware = L.marker([1737, 2935], {
+        title: "Nailed It Hardware",
+        icon: blackIcon
+    }).bindPopup("<h1>Nailed It Hardware</h1><img src='https://i.imgur.com/95C9Z4F.png' width=100% height=100% />").addTo(map);
 //==================== Pet Stores ====================
     var littlePaws = L.marker([4318, 4339], {
         title: "Little Paws",
@@ -290,6 +294,14 @@ var tealIcon = L.icon({
         title: "Artist Studio",
         icon: pinkIcon,
     }).bindPopup("<h1>Artist Studio</h1><p>Gallery and Museum!</p>").addTo(map);
+    var sanAndreasScouts = L.marker([6343, 3218], {
+        title: "San Andreas Scouts",
+        icon: pinkIcon,
+    }).bindPopup("<h1>San Andreas Scouts</h1><img src='https://cdn.discordapp.com/attachments/1073047874314702848/1073047979470094367/unknown.png' width=100% height=100% />").addTo(map);
+    var wyldChyld = L.marker([6990, 3855], {
+        title: "Wyld Chyld",
+        icon: pinkIcon,
+    }).bindPopup("<h1>Wyld Chyld</h1>").addTo(map);
 //==================== Electronics ====================
     var digitalDenMirrorPark = L.marker([2299, 4400], {
         title: "Digital Den (Mirror Park)",
@@ -328,10 +340,10 @@ var tealIcon = L.icon({
         title: "Pandia Expresso",
         icon: orangeIcon,
     }).bindPopup("<h1>Pandia Expresso</h1><p>Coffee & Cigarettes</p>").addTo(map);
-    var eruditeEats = L.marker([1, 1], {
+    var eruditeEats = L.marker([1701, 2906], {
         title: "Erudite Eats",
         icon: orangeIcon,
-    }).bindPopup("<h1>Erudite Eats</h1>").addTo(map);
+    }).bindPopup("<h1>Erudite Eats</h1><img src='https://i.imgur.com/t8ECMch.jpeg' width=100% height=100% />").addTo(map);
     var theWhiteRabbit = L.marker([4991.5, 4886], {
         tile: "The White Rabbit",
         icon: orangeIcon,
@@ -429,7 +441,9 @@ marker.addTo(map);
         oakAndDagger, 
         theDJMemorialFacility, 
         sirenRadio, 
-        artistStudio
+        artistStudio,
+        sanAndreasScouts,
+        wyldChyld,
     ]);
     var electronics = L.layerGroup([
         digitalDenMirrorPark,
