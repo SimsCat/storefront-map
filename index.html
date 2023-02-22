@@ -135,7 +135,7 @@ var tealIcon = L.icon({
 //==================== Novelty Shops ====================
     var truthAndJustice = L.marker([6620, 3490], {
         title: "Truth and Justice Floral"
-    }).bindPopup("<h1>Truth and Justice Floral</h1><img src='https://i.imgur.com/HYmxdFV.png' width=100% height=100% />").addTo(map);
+    }).bindPopup("<h1>Truth and Justice Floral</h1><img src='https://i.imgur.com/HYmxdFV.png' width=100% height=100% /><img src='https://i.imgur.com/l2gojDS.jpeg' width=100% height=100% />").addTo(map);
     var plusOne = L.marker([2283.75, 4442], {
         title: "Plus One",
     }).bindPopup("<h1>Plus One</h1>").addTo(map);
@@ -178,6 +178,9 @@ var tealIcon = L.icon({
     var animeCity = L.marker([2055, 3197], {
         title: "Anime City",
     }).bindPopup("<h1>Anime City</h1><img src='https://i.imgur.com/lE73g4I.png' width=100% height=100% />").addTo(map);
+    var benjiRamos = L.marker([1965, 2600], {
+        title: "Gansta's Paradise",
+    }).bindPopup("<h1>Gansta's Paradise</h1><img src='https://i.imgur.com/IIrhwf2.jpeg' width=100% height=100% />").addTo(map);
 //====================== Dispensaries ======================
     var roostersReef = L.marker([2755, 3659], {
         title: "Rooster's Reef",
@@ -195,7 +198,7 @@ var tealIcon = L.icon({
     var harmonyHardware = L.marker([4365, 4457], {
         title: "Harmony Hardware",
         icon: blackIcon,
-    }).bindPopup("<h1>Harmony Hardware</h1>").addTo(map);
+    }).bindPopup("<h1>Harmony Hardware</h1><img src='https://i.imgur.com/JxsOA8L.jpeg' width=100% height=100% />").addTo(map);
     var hoeDepot = L.marker([2315.5, 4420.5], {
         title: "Hoe Depot",
         icon: blackIcon,
@@ -260,15 +263,23 @@ var tealIcon = L.icon({
         title: "Flop Dugong's Gun Emporium Co-Owned by Jeffrey Bundy",
         icon: blackIcon,
     }).bindPopup("<h1><strike>Sai Carter's</strike> Flop Dugong's Gun Emporium</h1><img src='https://i.imgur.com/kPekNy2.jpeg' width=100% height=100% />").addTo(map);
+    var pussyCat = L.marker([2015, 3232], {
+        title: "Pussy Cat",
+        icon: blackIcon,
+    }).bindPopup("<h1>Pussy Cat</h1><img src='https://i.imgur.com/OlUc7sj.png' width=100% height=100% />").addTo(map);
+    var theSpeedTrap = L.marker([5078, 4925], {
+        title: "The Speed Trap",
+        icon: blackIcon,
+    }).bindPopup("<h1>The Speed Trap</h1><img src='https://i.imgur.com/b2WOEH1.jpeg' width=100% height=100% />").addTo(map);
 //==================== Pet Stores ====================
     var littlePaws = L.marker([4318, 4339], {
         title: "Little Paws",
         icon: whiteIcon,
-    }).bindPopup("<h1>Little Paws</h1>").addTo(map);
+    }).bindPopup("<h1>Little Paws</h1><img src='https://i.imgur.com/SFT40oS.jpeg' width=100% height=100% />").addTo(map);
     var paletoPets = L.marker([6653.5, 3494.25], {
         title: "Paleto Pets",
         icon: whiteIcon,
-    }).bindPopup("<h1>Paleto Pets</h1>").addTo(map);
+    }).bindPopup("<h1>Paleto Pets</h1><img src='https://i.imgur.com/3RVy5OX.jpeg' width=100% height=100% />").addTo(map);
 //==================== Recreation ====================
     var horage = L.marker([2417, 4420], {
         title: "HORAGE",
@@ -364,11 +375,11 @@ var tealIcon = L.icon({
     var tunerShop = L.marker([645, 3760], {
         title: "The 6STR Tuner Shop",
         icon: tealIcon,
-    }).bindPopup("<h1>The 6STR Tuner Shop</h1>").addTo(map);
+    }).bindPopup("<h1>The 6STR Tuner Shop</h1><img src='https://media.discordapp.net/attachments/876967826227863583/900314032689528852/tunerfix.gif' width=100% height=100% />'").addTo(map);
     var ironHog = L.marker([4747, 4808], {
         title: "Iron Hog Repairs",
         icon: tealIcon,
-    }).bindPopup('<h1>Iron Hog Repairs</h1>').addTo(map);
+    }).bindPopup("<h1>Iron Hog Repairs</h1><img src='https://i.imgur.com/e5GMWoZ.jpeg' width=100% height=100% />").addTo(map);
     var ottosAutos = L.marker([2089, 4196], {
         title: "Otto's Autos",
         icon: tealIcon,
@@ -415,6 +426,7 @@ marker.addTo(map);
         underpassSkateShop,
         swoleCreations,
         animeCity,
+        benjiRamos,
     ]);
     var dispensaries = L.layerGroup([
         roostersReef,
@@ -439,6 +451,8 @@ marker.addTo(map);
         thePitStop,
         nailedItHardware,
         saiCartersGunEmporium,
+        theSpeedTrap,
+        pussyCat,
     ]);
     var petStores = L.layerGroup([
         littlePaws,
