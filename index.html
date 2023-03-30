@@ -15,6 +15,7 @@
     <script type="text/javascript" src="./configs/restaurants.js"></script>
     <script type="text/javascript" src="./configs/corner_stores.js"></script>
     <script type="text/javascript" src="./configs/novelty_shops.js"></script>
+    <script type="text/javascript" src="./configs/dispensaries.js"></script>
     <script type="text/javascript" src="./src/utils.js"></script>
 
     <script>
@@ -92,21 +93,13 @@
         corner_stores_markers = create_marker_list(corner_stores_list)
 
         //==================== Novelty Shops ====================
+
         novelty_shops_markers = create_marker_list(novelty_shops_list)
         
         //====================== Dispensaries ======================
-        var roostersReef = L.marker([2755, 3659], {
-            title: "Rooster's Reef",
-            icon: greenIcon,
-        }).bindPopup("<h1>Rooster's Reef</h1><p>Joints and Coffee, what else could you ask for?</p>").addTo(map);
-        var dejaBrew = L.marker([2024, 3241], {
-            title: "Deja Brew",
-            icon: greenIcon,
-        }).bindPopup("<h1>Deja Brew</h1><img src='https://i.imgur.com/AzWTNH4.png' width=100% height=100% />").addTo(map);
-        var smokeOnTheWater = L.marker([2055, 3220], {
-            title: "Smoke On The Water",
-            icon: greenIcon,
-        }).bindPopup("<h1>Smoke On The Water</h1><img src='https://i.imgur.com/cBLRyHu.jpeg' width=100% height=100% />").addTo(map);
+
+        dispensaries_markers = create_marker_list(dispensaries_list)
+
         //====================== Supply Stores ======================
         var harmonyHardware = L.marker([4365, 4457], {
             title: "Harmony Hardware",
@@ -307,11 +300,7 @@ marker.addTo(map);
     var cornerStores = L.layerGroup(corner_stores_markers);
     var restaurants = L.layerGroup(restaurants_markers);
     var noveltyShops = L.layerGroup(novelty_shops_markers);
-    var dispensaries = L.layerGroup([
-        roostersReef,
-        dejaBrew,
-        smokeOnTheWater,
-    ]);
+    var dispensaries = L.layerGroup(dispensaries_markers);
     var hardwareStores = L.layerGroup([
         harmonyHardware,
         hoeDepot,

@@ -1,4 +1,4 @@
-// Template List of stores in JSON format to help with processing in code.
+// Template List of <STORE_TYPE> in JSON format to help with processing in code.
 template_store_list = [
     {
         "title": "Shrugway",
