@@ -21,6 +21,7 @@
     <script type="text/javascript" src="./configs/recreational_stores.js"></script>
     <script type="text/javascript" src="./configs/electronics_stores.js"></script>
     <script type="text/javascript" src="./configs/coffee_houses.js"></script>
+    <script type="text/javascript" src="./configs/repair_shops.js"></script>
     <script type="text/javascript" src="./src/utils.js"></script>
 
     <script>
@@ -126,22 +127,9 @@
         coffee_houses_markers = create_marker_list(coffee_houses_list)
 
         /*==================== Repair Shops ====================*/
-        var hayesAuto = L.marker([2316, 2751], {
-            title: "Hayes Auto Body Repairs",
-            icon: tealIcon,
-        }).bindPopup("<h1>Hayes Auto Body Repairs</h1>").addTo(map);
-        var tunerShop = L.marker([645, 3760], {
-            title: "The 6STR Tuner Shop",
-            icon: tealIcon,
-        }).bindPopup("<h1>The 6STR Tuner Shop</h1><img src='https://media.discordapp.net/attachments/876967826227863583/900314032689528852/tunerfix.gif' width=100% height=100% />'").addTo(map);
-        var ironHog = L.marker([4747, 4808], {
-            title: "Iron Hog Repairs",
-            icon: tealIcon,
-        }).bindPopup("<h1>Iron Hog Repairs</h1><img src='https://i.imgur.com/e5GMWoZ.jpeg' width=100% height=100% />").addTo(map);
-        var ottosAutos = L.marker([2089, 4196], {
-            title: "Otto's Autos",
-            icon: tealIcon,
-        }).bindPopup("<h1>Otto's Autos</h1>").addTo(map);
+
+        repair_shops_markers = create_marker_list(repair_shops_list)
+
         /*==================== Easter Eggs ====================*/
         //var norman = L.marker([5930, 5870]).bindPopup('Normans Dumbass House').addTo(map);
         //var center = L.marker ([4000, 4000]).bindPopup('Center of Map').addTo(map);
@@ -160,12 +148,7 @@
         var recreation = L.layerGroup(recreational_stores_markers);
         var electronics = L.layerGroup(electronics_stores_markers);
         var coffee_houses = L.layerGroup(coffee_houses_markers);
-        var repairShop = L.layerGroup([
-            hayesAuto,
-            tunerShop,
-            ironHog,
-            ottosAutos,
-        ]);
+        var repairShop = L.layerGroup(repair_shops_markers);
         /*==================== Leaflet Layer Control ====================*/
         map.addLayer(restaurants)
         map.addLayer(cornerStores)
