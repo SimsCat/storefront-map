@@ -29,8 +29,8 @@ Depending on the type of store it is:
     - Validate JSON to make sure it is fine
 
 ## TODO:
-- Add Wheelchair accessibility as a JSON disct and work with Lucky to process it,
-- Change categories to match the one in sotrefront guidelines,
+- Add Wheelchair accessibility as a JSON dict and work with Lucky to process it,
+- Change categories to match the one in storefront guidelines,
 - See if scroll/zoom lag can be fixed or smoothened,
 - See if the Map can eb safely compressed further,
 - See if Icons can also be in compressed format
