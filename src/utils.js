@@ -16,7 +16,8 @@ function create_marker_str(title, desc, pictures) {
 }
 
 // Create Marker list given json
-function create_marker_list(current_store_list) {
+// TODO: Pass in correct colour icon
+function create_marker_list(current_store_list, matching_icon) {
     var current_markers = []
     var marker_str;
     current_store_list.forEach(function (item, index) {
@@ -29,7 +30,7 @@ function create_marker_list(current_store_list) {
         //console.log(item.title, item.x, item.y, item.description, marker_str);
         var marker = L.marker([item.x, item.y], {
             title: item.title,
-            icon: redIcon,
+            icon: matching_icon,
         }).bindPopup(
             marker_str
         ).addTo(map);
