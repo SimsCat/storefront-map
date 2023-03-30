@@ -20,6 +20,7 @@
     <script type="text/javascript" src="./configs/pet_stores.js"></script>
     <script type="text/javascript" src="./configs/recreational_stores.js"></script>
     <script type="text/javascript" src="./configs/electronics_stores.js"></script>
+    <script type="text/javascript" src="./configs/coffee_houses.js"></script>
     <script type="text/javascript" src="./src/utils.js"></script>
 
     <script>
@@ -120,31 +121,10 @@
 
         electronics_stores_markers = create_marker_list(electronics_stores_list)
 
-        /*==================== Coffee House ====================*/
-        var beanMachine = L.marker([2762, 3265], {
-            title: "Bean Machine",
-            icon: orangeIcon,
-        }).bindPopup("<h1>Bean Machine</h1>").addTo(map);
-        var heroWine = L.marker([2841, 3605], {
-            title: "HeroWine",
-            icon: orangeIcon,
-        }).bindPopup("<h1>HeroWine</h1><p>Wine Bottles and Wine Glasses, so fancy!</p>").addTo(map);
-        var queenies = L.marker([1742.25, 2822.5], {
-            title: "Queenies",
-            icon: orangeIcon,
-        }).bindPopup("<h1>Queenies</h1>").addTo(map);
-        var pandiaExpresso = L.marker([1879, 3280], {
-            title: "Pandia Expresso",
-            icon: orangeIcon,
-        }).bindPopup("<h1>Pandia Expresso</h1><p>Coffee & Cigarettes</p>").addTo(map);
-        var eruditeEats = L.marker([1701, 2906], {
-            title: "Erudite Eats",
-            icon: orangeIcon,
-        }).bindPopup("<h1>Erudite Eats</h1><img src='https://i.imgur.com/t8ECMch.jpeg' width=100% height=100% />").addTo(map);
-        var theWhiteRabbit = L.marker([4991.5, 4886], {
-            tile: "The White Rabbit",
-            icon: orangeIcon,
-        }).bindPopup("<h1>The White Rabbit</h1>").addTo(map);
+        /*==================== Coffee Houses ====================*/
+
+        coffee_houses_markers = create_marker_list(coffee_houses_list)
+
         /*==================== Repair Shops ====================*/
         var hayesAuto = L.marker([2316, 2751], {
             title: "Hayes Auto Body Repairs",
@@ -179,14 +159,7 @@
         var petStores = L.layerGroup(pet_stores_markers);
         var recreation = L.layerGroup(recreational_stores_markers);
         var electronics = L.layerGroup(electronics_stores_markers);
-        var coffeehouse = L.layerGroup([
-            beanMachine,
-            heroWine,
-            queenies,
-            pandiaExpresso,
-            eruditeEats,
-            theWhiteRabbit,
-        ]);
+        var coffee_houses = L.layerGroup(coffee_houses_markers);
         var repairShop = L.layerGroup([
             hayesAuto,
             tunerShop,
@@ -202,7 +175,7 @@
         map.addLayer(petStores)
         map.addLayer(recreation)
         map.addLayer(electronics)
-        map.addLayer(coffeehouse)
+        map.addLayer(coffee_houses)
         map.addLayer(repairShop)
         var overlayMaps = {
             'Restaurants (Staffed Food Establishments)': restaurants, 
@@ -213,7 +186,7 @@
             'Pet Stores (For Pets)': petStores,
             'Recreational (You know, Fun Stuff)': recreation,
             'Electronics (Phones, Laptops, VPNs)': electronics,
-            'Coffee Houses & Beverage (Coffee, Wine)': coffeehouse,
+            'Coffee Houses & Beverage (Coffee, Wine)': coffee_houses,
             'Mechanics & Repair Shops': repairShop,
         };
         L.control.layers(0, overlayMaps).addTo(map);
