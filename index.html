@@ -17,10 +17,11 @@
     <script type="text/javascript" src="./configs/novelty_shops.js"></script>
     <script type="text/javascript" src="./configs/dispensaries.js"></script>
     <script type="text/javascript" src="./configs/supply_stores.js"></script>
+    <script type="text/javascript" src="./configs/pet_stores.js"></script>
     <script type="text/javascript" src="./src/utils.js"></script>
 
     <script>
-        //==================== GTA Map ====================
+        /*==================== GTA Map ====================*/
         var map = L.map('map', {
             crs: L.CRS.Simple,
             minZoom: -3.0
@@ -28,7 +29,7 @@
         var bounds = [[0,0], [8000,8000]];
         var image = L.imageOverlay('images/GTAV8kRes_10_percent.png', bounds).addTo(map);
         map.fitBounds(bounds);
-        //==================== Icons ====================
+        /*==================== Icons ====================*/
         var blackIcon = L.icon({
             iconUrl: "images/marker-black.png",
             shadowUrl: "images/marker-shadow.png",
@@ -85,36 +86,31 @@
             shadowAnchor: [12, 41],
             popupAnchor: [0, -41],
         })
-        //==================== Restaurants ====================
+        /*==================== Restaurants ====================*/
 
         restaurants_markers = create_marker_list(restaurants_list)
 
-        //==================== Corner Stores ====================
+        /*==================== Corner Stores ====================*/
 
         corner_stores_markers = create_marker_list(corner_stores_list)
 
-        //==================== Novelty Shops ====================
+        /*==================== Novelty Shops ====================*/
 
         novelty_shops_markers = create_marker_list(novelty_shops_list)
         
-        //====================== Dispensaries ======================
+        /*====================== Dispensaries ======================*/
 
         dispensaries_markers = create_marker_list(dispensaries_list)
 
-        //====================== Supply Stores ======================
+        /*====================== Supply Stores ======================*/
 
         supply_stores_markers = create_marker_list(supply_stores_list)
 
-        //==================== Pet Stores ====================
-        var littlePaws = L.marker([4318, 4339], {
-            title: "Little Paws",
-            icon: whiteIcon,
-        }).bindPopup("<h1>Little Paws</h1><img src='https://i.imgur.com/SFT40oS.jpeg' width=100% height=100% />").addTo(map);
-        var paletoPets = L.marker([6653.5, 3494.25], {
-            title: "Paleto Pets",
-            icon: whiteIcon,
-        }).bindPopup("<h1>Paleto Pets</h1><img src='https://i.imgur.com/3RVy5OX.jpeg' width=100% height=100% />").addTo(map);
-        //==================== Recreation ====================
+        /*==================== Pet Stores ====================*/
+
+        pet_stores_markers = create_marker_list(pet_stores_list)
+
+        /*==================== Recreation ====================*/
         var horage = L.marker([2417, 4420], {
             title: "HORAGE",
             icon: pinkIcon,
@@ -155,7 +151,7 @@
             title: "Nopixel Trading Cards",
             icon: pinkIcon,
         }).bindPopup("<h1>Nopixel Trading Cards</h1><img src='https://i.imgur.com/jo6W0vY.jpeg' width=100% height=100% />").addTo(map);
-        //==================== Electronics ====================
+        /*==================== Electronics ====================*/
         var digitalDenMirrorPark = L.marker([2299, 4400], {
             title: "Digital Den (Mirror Park)",
             icon: purpleIcon,
@@ -176,7 +172,7 @@
             title: "Rat Shack",
             icon: purpleIcon,
         }).bindPopup("<h1>Rat Shack</h1><img src='https://i.imgur.com/QecUNLU.png' width=100% height=100% />").addTo(map);
-        //==================== Coffee House ====================
+        /*==================== Coffee House ====================*/
         var beanMachine = L.marker([2762, 3265], {
             title: "Bean Machine",
             icon: orangeIcon,
@@ -201,7 +197,7 @@
             tile: "The White Rabbit",
             icon: orangeIcon,
         }).bindPopup("<h1>The White Rabbit</h1>").addTo(map);
-        //==================== Repair Shops ====================
+        /*==================== Repair Shops ====================*/
         var hayesAuto = L.marker([2316, 2751], {
             title: "Hayes Auto Body Repairs",
             icon: tealIcon,
@@ -218,79 +214,76 @@
             title: "Otto's Autos",
             icon: tealIcon,
         }).bindPopup("<h1>Otto's Autos</h1>").addTo(map);
-        //==================== Easter Eggs ====================
+        /*==================== Easter Eggs ====================*/
         //var norman = L.marker([5930, 5870]).bindPopup('Normans Dumbass House').addTo(map);
         //var center = L.marker ([4000, 4000]).bindPopup('Center of Map').addTo(map);
         var marker = new L.marker([39.5, -77.3], { opacity: 0.01 }); //opacity may be set to zero
-marker.bindTooltip("<h2>This site is still a work in progress, contact @MelarkyNP on twitter for info/attribution to your storefront's marker!</h2>", {permanent: true, className: "my-label", offset: [0, 0] });
-marker.addTo(map);
-//==================== Layers ====================
-    var cornerStores = L.layerGroup(corner_stores_markers);
-    var restaurants = L.layerGroup(restaurants_markers);
-    var noveltyShops = L.layerGroup(novelty_shops_markers);
-    var dispensaries = L.layerGroup(dispensaries_markers);
-    var hardwareStores = L.layerGroup(supply_stores_markers);
-    var petStores = L.layerGroup([
-        littlePaws,
-        paletoPets,
-    ]);
-    var recreation = L.layerGroup([
-        horage, 
-        bongjour, 
-        pitchersVinewood, 
-        oakAndDagger, 
-        theDJMemorialFacility, 
-        sirenRadio, 
-        artistStudio,
-        sanAndreasScouts,
-        wyldChyld,
-        nopixelCards,
-    ]);
-    var electronics = L.layerGroup([
-        digitalDenMirrorPark,
-        raysElectronics,
-        digitalDenLittleSeoul,
-        amazoom,
-        ratShack,
-    ]);
-    var coffeehouse = L.layerGroup([
-        beanMachine,
-        heroWine,
-        queenies,
-        pandiaExpresso,
-        eruditeEats,
-        theWhiteRabbit,
-    ]);
-    var repairShop = L.layerGroup([
-        hayesAuto,
-        tunerShop,
-        ironHog,
-        ottosAutos,
-    ]);
-//==================== Leaflet Layer Control ====================
-    map.addLayer(restaurants)
-    map.addLayer(cornerStores)
-    map.addLayer(noveltyShops)
-    map.addLayer(dispensaries)
-    map.addLayer(hardwareStores)
-    map.addLayer(petStores)
-    map.addLayer(recreation)
-    map.addLayer(electronics)
-    map.addLayer(coffeehouse)
-    map.addLayer(repairShop)
-    var overlayMaps = {
-        'Restaurants (Staffed Food Establishments)': restaurants, 
-        'Corner Stores (Bandaids, Armor)': cornerStores, 
-        'Novelty Shops (Plushies, Collectables)': noveltyShops, 
-        'Dispensaries (Joints, Cigs)': dispensaries, 
-        'Supply Stores (Tools, Supplies)': hardwareStores, 
-        'Pet Stores (For Pets)': petStores,
-        'Recreational (You know, Fun Stuff)': recreation,
-        'Electronics (Phones, Laptops, VPNs)': electronics,
-        'Coffee Houses & Beverage (Coffee, Wine)': coffeehouse,
-        'Mechanics & Repair Shops': repairShop,
-    };
-    L.control.layers(0, overlayMaps).addTo(map);
+        marker.bindTooltip("<h2>This site is still a work in progress, contact @MelarkyNP on twitter for info/attribution to your storefront's marker!</h2>", {permanent: true, className: "my-label", offset: [0, 0] });
+        marker.addTo(map);
+        /*==================== Layers ====================*/
+        var cornerStores = L.layerGroup(corner_stores_markers);
+        var restaurants = L.layerGroup(restaurants_markers);
+        var noveltyShops = L.layerGroup(novelty_shops_markers);
+        var dispensaries = L.layerGroup(dispensaries_markers);
+        var hardwareStores = L.layerGroup(supply_stores_markers);
+        var petStores = L.layerGroup(pet_stores_markers);
+        var recreation = L.layerGroup([
+            horage, 
+            bongjour, 
+            pitchersVinewood, 
+            oakAndDagger, 
+            theDJMemorialFacility, 
+            sirenRadio, 
+            artistStudio,
+            sanAndreasScouts,
+            wyldChyld,
+            nopixelCards,
+        ]);
+        var electronics = L.layerGroup([
+            digitalDenMirrorPark,
+            raysElectronics,
+            digitalDenLittleSeoul,
+            amazoom,
+            ratShack,
+        ]);
+        var coffeehouse = L.layerGroup([
+            beanMachine,
+            heroWine,
+            queenies,
+            pandiaExpresso,
+            eruditeEats,
+            theWhiteRabbit,
+        ]);
+        var repairShop = L.layerGroup([
+            hayesAuto,
+            tunerShop,
+            ironHog,
+            ottosAutos,
+        ]);
+        /*==================== Leaflet Layer Control ====================*/
+        map.addLayer(restaurants)
+        map.addLayer(cornerStores)
+        map.addLayer(noveltyShops)
+        map.addLayer(dispensaries)
+        map.addLayer(hardwareStores)
+        map.addLayer(petStores)
+        map.addLayer(recreation)
+        map.addLayer(electronics)
+        map.addLayer(coffeehouse)
+        map.addLayer(repairShop)
+        var overlayMaps = {
+            'Restaurants (Staffed Food Establishments)': restaurants, 
+            'Corner Stores (Bandaids, Armor)': cornerStores, 
+            'Novelty Shops (Plushies, Collectables)': noveltyShops, 
+            'Dispensaries (Joints, Cigs)': dispensaries, 
+            'Supply Stores (Tools, Supplies)': hardwareStores, 
+            'Pet Stores (For Pets)': petStores,
+            'Recreational (You know, Fun Stuff)': recreation,
+            'Electronics (Phones, Laptops, VPNs)': electronics,
+            'Coffee Houses & Beverage (Coffee, Wine)': coffeehouse,
+            'Mechanics & Repair Shops': repairShop,
+        };
+        L.control.layers(0, overlayMaps).addTo(map);
     </script>
 </body>
 </html>
