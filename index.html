@@ -19,6 +19,7 @@
     <script type="text/javascript" src="./configs/supply_stores.js"></script>
     <script type="text/javascript" src="./configs/pet_stores.js"></script>
     <script type="text/javascript" src="./configs/recreational_stores.js"></script>
+    <script type="text/javascript" src="./configs/electronics_stores.js"></script>
     <script type="text/javascript" src="./src/utils.js"></script>
 
     <script>
@@ -116,26 +117,9 @@
         recreational_stores_markers = create_marker_list(recreational_stores_list)
 
         /*==================== Electronics ====================*/
-        var digitalDenMirrorPark = L.marker([2299, 4400], {
-            title: "Digital Den (Mirror Park)",
-            icon: purpleIcon,
-        }).bindPopup("<h1>Digital Den (Mirror Park)</h1>").addTo(map);
-        var digitalDenLittleSeoul = L.marker([1872.5, 3280], {
-            title: "Digital Den (Little Seoul)",
-            icon: purpleIcon,
-        }).bindPopup("<h1>Digital Den (Little Seoul)</h1>").addTo(map);
-        var raysElectronics = L.marker([6773, 3655], {
-            title: "Ericson's Electronics",
-            icon: purpleIcon,
-        }).bindPopup("<h1>Ericson's Electronics</h1>").addTo(map);
-        var amazoom = L.marker([1886, 3280], {
-            title: "Amazoom",
-            icon: purpleIcon,
-        }).bindPopup("<h1>Amazoom</h1><p>Electronics N Stuff</p>").addTo(map);
-        var ratShack = L.marker([2042, 3219], {
-            title: "Rat Shack",
-            icon: purpleIcon,
-        }).bindPopup("<h1>Rat Shack</h1><img src='https://i.imgur.com/QecUNLU.png' width=100% height=100% />").addTo(map);
+
+        electronics_stores_markers = create_marker_list(electronics_stores_list)
+
         /*==================== Coffee House ====================*/
         var beanMachine = L.marker([2762, 3265], {
             title: "Bean Machine",
@@ -194,13 +178,7 @@
         var hardwareStores = L.layerGroup(supply_stores_markers);
         var petStores = L.layerGroup(pet_stores_markers);
         var recreation = L.layerGroup(recreational_stores_markers);
-        var electronics = L.layerGroup([
-            digitalDenMirrorPark,
-            raysElectronics,
-            digitalDenLittleSeoul,
-            amazoom,
-            ratShack,
-        ]);
+        var electronics = L.layerGroup(electronics_stores_markers);
         var coffeehouse = L.layerGroup([
             beanMachine,
             heroWine,

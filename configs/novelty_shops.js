@@ -9,8 +9,8 @@ novelty_shops_list = [
         "x": 6620,
         "y": 3490,
         "description": "We're Always Open!",
-        "wheelchair_accessible_partly": true,
-        "wheelchair_accessible_fully": true
+        "wheelchair_accessible_partly": false,
+        "wheelchair_accessible_fully": false
     },
     {
         "title": "Plus One",
