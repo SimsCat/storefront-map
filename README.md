@@ -28,7 +28,12 @@ Depending on the type of store it is:
 - To Delete: Find JSON object in the list, delete it,
     - Validate JSON to make sure it is fine
 
-## some other subtitle
+## TODO:
+- Add Wheelchair accessibility as a JSON disct and work with Lucky to process it,
+- Change categories to match the one in sotrefront guidelines,
+- See if scroll/zoom lag can be fixed or smoothened,
+- See if the Map can eb safely compressed further,
+- See if Icons can also be in compressed format
 
 # Useful links:
 IMG compressor: https://www.compress2go.com/

@@ -16,6 +16,7 @@
     <script type="text/javascript" src="./configs/corner_stores.js"></script>
     <script type="text/javascript" src="./configs/novelty_shops.js"></script>
     <script type="text/javascript" src="./configs/dispensaries.js"></script>
+    <script type="text/javascript" src="./configs/supply_stores.js"></script>
     <script type="text/javascript" src="./src/utils.js"></script>
 
     <script>
@@ -101,82 +102,9 @@
         dispensaries_markers = create_marker_list(dispensaries_list)
 
         //====================== Supply Stores ======================
-        var harmonyHardware = L.marker([4365, 4457], {
-            title: "Harmony Hardware",
-            icon: blackIcon,
-        }).bindPopup("<h1>Harmony Hardware</h1><img src='https://i.imgur.com/JxsOA8L.jpeg' width=100% height=100% />").addTo(map);
-        var hoeDepot = L.marker([2315.5, 4420.5], {
-            title: "Hoe Depot",
-            icon: blackIcon,
-        }).bindPopup("<h1>Hoe Depot</h1>").addTo(map);
-        var lizardDix = L.marker([5000, 4790], {
-            title: "Lizard Dix",
-            icon: blackIcon,
-        }).bindPopup("<h1>Lizard Dix</h1>").addTo(map);
-        var pureLube = L.marker([6728.5, 3609], {
-            title: "Pure Lube",
-            icon: blackIcon,
-        }).bindPopup("<h1>Pure Lube</h1><p>Bike Armor and Repair Kits!</p>").addTo(map);
-        var briansBeautyBoutique = L.marker([2674.5, 3912], {
-            title: "Brian's Beauty Boutique",
-            icon: blackIcon,
-        }).bindPopup("<h1>Brian's Beauty Boutique</h1>").addTo(map);
-        var vinewoodVideo = L.marker([2706, 3827], {
-            title: "Vinewood Video",
-            icon: blackIcon,
-        }).bindPopup("<h1>Vinewood Video</h1><p>Lights, Cameras, Microphones, Action!</p>").addTo(map);
-        var planBee = L.marker([2759.5, 3553.5], {
-            title: "Plan Bee",
-            icon: blackIcon,
-        }).bindPopup("<h1>Plan Bee</h1><p>A Bee Keeper Paradise!</p>").addTo(map);
-        var bigPussysLocksmith = L.marker([2759.5, 3549], {
-            title: "Big Pussy's Locksmith",
-            icon: blackIcon,
-        }).bindPopup("<h1>Big Pussy's Locksmith</h1><p>").addTo(map);
-        var bilgeAndCo = L.marker([2785, 3357], {
-            title: "Bilge & Co.",
-            icon: blackIcon,
-        }).bindPopup("<h1>Bilge & Co.</h1>").addTo(map);
-        var hardOnTools = L.marker([2760.5, 3765], {
-            title: "Hard On Tools",
-            icon: blackIcon,
-        }).bindPopup("<h1>Hard On Tools</h1>").addTo(map);
-        var deezNotes = L.marker([1741, 2946.5], {
-            title: "Deez Notes",
-            icon: blackIcon,
-        }).bindPopup("<h1>Deez Notes</h1><p>Instruments and Music Supplies!</p>").addTo(map);
-        var greenerPastures = L.marker([1882, 3280], {
-            title: "Greener Pastures",
-            icon: blackIcon,
-        }).bindPopup("<h1>Greener Pastures</h1>").addTo(map);
-        var recyclingCenter = L.marker([4615, 5182], {
-            title: "Sandy Shores Recycling Center",
-            icon: blackIcon,
-        }).bindPopup("<h1>Sandy Shores Recycling Center</h1><img src='https://i.imgur.com/O0xSyQ0.jpeg' width=100% height=100% />").addTo(map);
-        var mulTLocks = L.marker([2020, 3241], {
-            title: "Mul-T-Locks",
-            icon: blackIcon,
-        }).bindPopup("<h1>Mul-T-Locks</h1><img src='https://i.imgur.com/ZQhdXbX.jpeg' width=100% height=100% />").addTo(map);
-        var thePitStop = L.marker([2015, 3226], {
-            title: "The Pit Stop",
-            icon: blackIcon
-        }).bindPopup("<h1>The Pit Stop</h1><img src='https://i.imgur.com/nWyHnot.png' width=100% height=100% />").addTo(map);
-        var nailedItHardware = L.marker([1737, 2935], {
-            title: "Nailed It Hardware",
-            icon: blackIcon
-        }).bindPopup("<h1>Nailed It Hardware</h1><img src='https://i.imgur.com/95C9Z4F.png' width=100% height=100% />").addTo(map);
-        var saiCartersGunEmporium = L.marker([1765, 4415], {
-            title: "Flop Dugong's Gun Emporium Co-Owned by Jeffrey Bundy",
-            icon: blackIcon,
-        }).bindPopup("<h1><strike>Sai Carter's</strike> Flop Dugong's Gun Emporium</h1><img src='https://i.imgur.com/kPekNy2.jpeg' width=100% height=100% />").addTo(map);
-        var pussyCat = L.marker([2015, 3232], {
-            title: "Pussy Cat",
-            icon: blackIcon,
-        }).bindPopup("<h1>Pussy Cat</h1><img src='https://i.imgur.com/OlUc7sj.png' width=100% height=100% />").addTo(map);
-        var theSpeedTrap = L.marker([5078, 4925], {
-            title: "The Speed Trap",
-            icon: blackIcon,
-        }).bindPopup("<h1>The Speed Trap</h1><img src='https://i.imgur.com/b2WOEH1.jpeg' width=100% height=100% />").addTo(map);
+
+        supply_stores_markers = create_marker_list(supply_stores_list)
+
         //==================== Pet Stores ====================
         var littlePaws = L.marker([4318, 4339], {
             title: "Little Paws",
@@ -301,27 +229,7 @@ marker.addTo(map);
     var restaurants = L.layerGroup(restaurants_markers);
     var noveltyShops = L.layerGroup(novelty_shops_markers);
     var dispensaries = L.layerGroup(dispensaries_markers);
-    var hardwareStores = L.layerGroup([
-        harmonyHardware,
-        hoeDepot,
-        lizardDix,
-        pureLube,
-        briansBeautyBoutique,
-        vinewoodVideo,
-        planBee,
-        bigPussysLocksmith,
-        bilgeAndCo,
-        hardOnTools,
-        deezNotes,
-        greenerPastures,
-        recyclingCenter,
-        mulTLocks,
-        thePitStop,
-        nailedItHardware,
-        saiCartersGunEmporium,
-        theSpeedTrap,
-        pussyCat,
-    ]);
+    var hardwareStores = L.layerGroup(supply_stores_markers);
     var petStores = L.layerGroup([
         littlePaws,
         paletoPets,

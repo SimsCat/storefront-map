@@ -1,5 +1,5 @@
 // Template List of <STORE_TYPE> in JSON format to help with processing in code.
-template_store_list = [
+template_stores_list = [
     {
         "title": "Shrugway",
         "pictures": [
