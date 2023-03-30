@@ -16,7 +16,6 @@ function create_marker_str(title, desc, pictures) {
 }
 
 // Create Marker list given json
-// TODO: Pass in correct colour icon
 function create_marker_list(current_store_list, matching_icon) {
     var current_markers = []
     var marker_str;
