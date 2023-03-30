@@ -14,6 +14,7 @@
     <div id = "map"></div>
     <script type="text/javascript" src="./configs/restaurants.js"></script>
     <script type="text/javascript" src="./configs/corner_stores.js"></script>
+    <script type="text/javascript" src="./configs/novelty_shops.js"></script>
     <script type="text/javascript" src="./src/utils.js"></script>
 
     <script>
@@ -91,54 +92,8 @@
         corner_stores_markers = create_marker_list(corner_stores_list)
 
         //==================== Novelty Shops ====================
-        var truthAndJustice = L.marker([6620, 3490], {
-            title: "Truth and Justice Floral"
-        }).bindPopup("<h1>Truth and Justice Floral</h1><img src='https://i.imgur.com/HYmxdFV.png' width=100% height=100% /><img src='https://i.imgur.com/l2gojDS.jpeg' width=100% height=100% />").addTo(map);
-        var plusOne = L.marker([2283.75, 4442], {
-            title: "Plus One",
-        }).bindPopup("<h1>Plus One</h1>").addTo(map);
-        var mcmoos = L.marker([6690, 3540], {
-            title: "Mcmoo's",
-        }).bindPopup("<h1>Mcmoo's</h1><p><img src='https://i.imgur.com/sDceIWg.png' width=100% height=100% /> <p>A plushie for every occasion!</p>").addTo(map);
-        var lemonHayes = L.marker([6766, 3647], {
-            title: "Lemon Hayes"
-        }).bindPopup("<h1>Lemon Hayes</h1>").addTo(map);
-        var shitsandgiggles = L.marker([2720, 3893], {
-            title: "Sh!ts and G!ggles"
-        }).bindPopup("<h1>Sh!ts and G!ggles</h1>").addTo(map);
-        var bishopsWtf = L.marker([2750, 3710], {
-            title: "Bishop's WTF",
-        }).bindPopup("<h1>Bishop's WTF</h1>").addTo(map);
-        var thatsWeird = L.marker([2750, 3398, {
-            title: "That's Weird"
-        }]).bindPopup("<h1>That's Weird</h1><p>Spooky Solutions and Ghost Tours!</p>").addTo(map);
-        var blvckcraft = L.marker([2764, 3190], {
-            title: "BLVCKCRAFT"
-        }).bindPopup("<h1>BLVCKCRAFT</h1>").addTo(map);
-        var crowex = L.marker([2755, 3778], {
-            title: "Crowex",
-        }).bindPopup("<h1>Crowex</h1>").addTo(map);
-        var maskRave = L.marker([2790, 3832], {
-            title: "Mask Rave",
-        }).bindPopup("<h1>Mask Rave</h1>").addTo(map);
-        var theGiftShop = L.marker([1903, 3280], {
-            title: "The Gift Shop",
-        }).bindPopup("<h1>The Gift Shop</h1>").addTo(map);
-        var pastels = L.marker([1985, 4144], {
-            title: "Pastels"
-        }).bindPopup("<h1>Pastels</h1><img src='https://i.imgur.com/K65YU5p.jpeg' width=100% height=100% />").addTo(map);
-        var underpassSkateShop = L.marker([1820, 4155], {
-            title: "Underpass Skate Shop"
-        }).bindPopup("<h1>Underpass Skate Shop</h1><img src='https://i.imgur.com/0BIiYGt.jpeg' width=100% height=100% /><p>Wicked Skateboards!</p>").addTo(map);
-        var swoleCreations = L.marker([2028, 3241.5], {
-            title: "Swole Creations"
-        }).bindPopup("<h1>Swole Creations</h1><img src='https://i.imgur.com/J0xxf3e.jpeg' width=100% height=100% />").addTo(map);
-        var animeCity = L.marker([2055, 3197], {
-            title: "Anime City",
-        }).bindPopup("<h1>Anime City</h1><img src='https://i.imgur.com/lE73g4I.png' width=100% height=100% />").addTo(map);
-        var benjiRamos = L.marker([1965, 2600], {
-            title: "Gansta's Paradise",
-        }).bindPopup("<h1>Gansta's Paradise</h1><img src='https://i.imgur.com/IIrhwf2.jpeg' width=100% height=100% />").addTo(map);
+        novelty_shops_markers = create_marker_list(novelty_shops_list)
+        
         //====================== Dispensaries ======================
         var roostersReef = L.marker([2755, 3659], {
             title: "Rooster's Reef",
@@ -351,24 +306,7 @@ marker.addTo(map);
 //==================== Layers ====================
     var cornerStores = L.layerGroup(corner_stores_markers);
     var restaurants = L.layerGroup(restaurants_markers);
-    var noveltyShops = L.layerGroup([
-        truthAndJustice,
-        plusOne,
-        mcmoos,
-        lemonHayes,
-        shitsandgiggles,
-        bishopsWtf,
-        thatsWeird,
-        blvckcraft,
-        crowex,
-        maskRave,
-        theGiftShop,
-        pastels,
-        underpassSkateShop,
-        swoleCreations,
-        animeCity,
-        benjiRamos,
-    ]);
+    var noveltyShops = L.layerGroup(novelty_shops_markers);
     var dispensaries = L.layerGroup([
         roostersReef,
         dejaBrew,
