@@ -8,8 +8,8 @@ supply_stores_list = [
         "x": 4365,
         "y": 4457,
         "description": null,
-        "wheelchair_accessible_partly": true,
-        "wheelchair_accessible_fully": true
+        "wheelchair_accessible_partly": false,
+        "wheelchair_accessible_fully": false
     },
     {
         "title": "Hoe Depot",

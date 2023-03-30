@@ -6,8 +6,8 @@ dispensaries_list = [
         "x": 2755,
         "y": 3659,
         "description": "Joints and Coffee, what else could you ask for?",
-        "wheelchair_accessible_partly": true,
-        "wheelchair_accessible_fully": true
+        "wheelchair_accessible_partly": false,
+        "wheelchair_accessible_fully": false
     },
     {
         "title": "Deja Brew",

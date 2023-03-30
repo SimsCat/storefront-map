@@ -18,6 +18,7 @@
     <script type="text/javascript" src="./configs/dispensaries.js"></script>
     <script type="text/javascript" src="./configs/supply_stores.js"></script>
     <script type="text/javascript" src="./configs/pet_stores.js"></script>
+    <script type="text/javascript" src="./configs/recreational_stores.js"></script>
     <script type="text/javascript" src="./src/utils.js"></script>
 
     <script>
@@ -111,46 +112,9 @@
         pet_stores_markers = create_marker_list(pet_stores_list)
 
         /*==================== Recreation ====================*/
-        var horage = L.marker([2417, 4420], {
-            title: "HORAGE",
-            icon: pinkIcon,
-        }).bindPopup("<h1>HORAGE</h1>").addTo(map);
-        var bongjour = L.marker([2037, 3243], {
-            title: "Bongjour",
-            icon: pinkIcon,
-        }).bindPopup("<h1>Bongjour</h1><img src='https://i.imgur.com/DvkG1sg.jpeg' width=100% height=100% />").addTo(map);
-        var pitchersVinewood = L.marker([2824, 3816], {
-            title: "Pitchers Vinewood",
-            icon: pinkIcon,
-        }).bindPopup("<h1>Pitchers Vinewood</h1>").addTo(map);
-        var oakAndDagger = L.marker([2757, 3615], {
-            title: "Oak and Dagger",
-            icon: pinkIcon,
-        }).bindPopup("<h1>Oak and Dagger</h1>").addTo(map);
-        var theDJMemorialFacility = L.marker([4343.5, 4881], {
-            title: "The D'Marie Johnson Memorial Facility for Correctional Training",
-            icon: pinkIcon,
-        }).bindPopup("<h1>The D'Marie Johnson Memorial Facility for Correctional Training</h1><img src='https://i.imgur.com/RyQ1M0c.png' width=100% height=100% /><p>For DOC Training and More!</p>").addTo(map);
-        var sirenRadio = L.marker([2461, 3131], {
-            title: "Siren Radio",
-            icon: pinkIcon,
-        }).bindPopup("<h1>Siren Radio</h1><img src='https://i.imgur.com/VAC54yv.png' width=100% height=100% />").addTo(map);
-        var artistStudio = L.marker([2755, 3793], {
-            title: "Artist Studio",
-            icon: pinkIcon,
-        }).bindPopup("<h1>Artist Studio</h1><p>Gallery and Museum!</p>").addTo(map);
-        var sanAndreasScouts = L.marker([6343, 3218], {
-            title: "San Andreas Scouts",
-            icon: pinkIcon,
-        }).bindPopup("<h1>San Andreas Scouts</h1><img src='https://cdn.discordapp.com/attachments/1073047874314702848/1073047979470094367/unknown.png' width=100% height=100% />").addTo(map);
-        var wyldChyld = L.marker([6990, 3855], {
-            title: "Wyld Chyld",
-            icon: pinkIcon,
-        }).bindPopup("<h1>Wyld Chyld</h1>").addTo(map);
-        var nopixelCards = L.marker([1968, 4185], {
-            title: "Nopixel Trading Cards",
-            icon: pinkIcon,
-        }).bindPopup("<h1>Nopixel Trading Cards</h1><img src='https://i.imgur.com/jo6W0vY.jpeg' width=100% height=100% />").addTo(map);
+
+        recreational_stores_markers = create_marker_list(recreational_stores_list)
+
         /*==================== Electronics ====================*/
         var digitalDenMirrorPark = L.marker([2299, 4400], {
             title: "Digital Den (Mirror Park)",

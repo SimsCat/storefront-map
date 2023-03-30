@@ -9,8 +9,8 @@ corner_stores_list = [
         "x": 1868,
         "y": 3286,
         "description": "Bandages, Plot Armor, and Copium, Oh My!",
-        "wheelchair_accessible_partly": true,
-        "wheelchair_accessible_fully": true
+        "wheelchair_accessible_partly": false,
+        "wheelchair_accessible_fully": false
     },
     {
         "title": "Betta Life",
