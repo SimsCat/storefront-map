@@ -6,8 +6,10 @@ recreational_stores_list = [
         "x": 2417,
         "y": 4420,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Bongjour",
@@ -17,8 +19,10 @@ recreational_stores_list = [
         "x": 2037,
         "y": 3243,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Pitchers Vinewood",
@@ -26,8 +30,10 @@ recreational_stores_list = [
         "x": 2824,
         "y": 3816,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Oak and Dagger",
@@ -35,8 +41,10 @@ recreational_stores_list = [
         "x": 2757,
         "y": 3615,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "The D'Marie Johnson Memorial Facility for Correctional Training",
@@ -46,8 +54,10 @@ recreational_stores_list = [
         "x": 4343.5,
         "y": 4881,
         "description": "For DOC Training and More!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Siren Radio",
@@ -57,8 +67,10 @@ recreational_stores_list = [
         "x": 2461,
         "y": 3131,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Artist Studio",
@@ -66,8 +78,10 @@ recreational_stores_list = [
         "x": 2755,
         "y": 3793,
         "description": "Gallery and Museum!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "San Andreas Scouts",
@@ -77,8 +91,10 @@ recreational_stores_list = [
         "x": 6343,
         "y": 3218,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Wyld Chyld",
@@ -86,8 +102,10 @@ recreational_stores_list = [
         "x": 6990,
         "y": 3855,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Nopixel Trading Cards",
@@ -97,7 +115,9 @@ recreational_stores_list = [
         "x": 1968,
         "y": 4185,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     }
 ]

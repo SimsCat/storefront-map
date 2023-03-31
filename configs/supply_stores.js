@@ -8,8 +8,10 @@ supply_stores_list = [
         "x": 4365,
         "y": 4457,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Hoe Depot",
@@ -17,8 +19,10 @@ supply_stores_list = [
         "x": 2315.5,
         "y": 4420.5,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Lizard Dix",
@@ -26,8 +30,10 @@ supply_stores_list = [
         "x": 6728.5,
         "y": 3609,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Pure Lube",
@@ -35,8 +41,10 @@ supply_stores_list = [
         "x": 6728.5,
         "y": 3609,
         "description": "Bike Armor and Repair Kits!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Brian's Beauty Boutique",
@@ -44,8 +52,10 @@ supply_stores_list = [
         "x": 2674.5,
         "y": 3912,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Vinewood Video",
@@ -53,8 +63,10 @@ supply_stores_list = [
         "x": 2706,
         "y": 3827,
         "description": "Lights, Cameras, Microphones, Action!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Plan Bee",
@@ -62,8 +74,10 @@ supply_stores_list = [
         "x": 2759.5,
         "y": 3553.5,
         "description": "A Bee Keeper Paradise!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Big Pussy's Locksmith",
@@ -71,8 +85,10 @@ supply_stores_list = [
         "x": 2759.5,
         "y": 3549,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Bilge & Co.",
@@ -80,8 +96,10 @@ supply_stores_list = [
         "x": 2785,
         "y": 3357,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Hard On Tools",
@@ -89,8 +107,10 @@ supply_stores_list = [
         "x": 2760.5,
         "y": 3765,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Deez Notes",
@@ -98,8 +118,10 @@ supply_stores_list = [
         "x": 1741,
         "y": 2946.5,
         "description": "Instruments and Music Supplies!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Greener Pastures",
@@ -107,8 +129,10 @@ supply_stores_list = [
         "x": 1882,
         "y": 3280,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Sandy Shores Recycling Center",
@@ -118,8 +142,10 @@ supply_stores_list = [
         "x": 4615,
         "y": 5182,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Mul-T-Locks",
@@ -129,8 +155,10 @@ supply_stores_list = [
         "x": 2020,
         "y": 3241,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "The Pit Stop",
@@ -140,8 +168,10 @@ supply_stores_list = [
         "x": 2015,
         "y": 3226,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Nailed It Hardware",
@@ -151,8 +181,10 @@ supply_stores_list = [
         "x": 1737,
         "y": 2935,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Flop Dugong's Gun Emporium Co-Owned by Jeffrey Bundy",
@@ -162,8 +194,10 @@ supply_stores_list = [
         "x": 1765,
         "y": 4415,
         "description": "<strike>Sai Carter's</strike> Flop Dugong's Gun Emporium",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Pussy Cat",
@@ -173,8 +207,10 @@ supply_stores_list = [
         "x": 2015,
         "y": 3232,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "The Speed Trap",
@@ -184,7 +220,9 @@ supply_stores_list = [
         "x": 5078,
         "y": 4925,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     }
 ]

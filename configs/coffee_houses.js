@@ -6,8 +6,10 @@ coffee_houses_list = [
         "x": 2762,
         "y": 3265,
         "description": "We're Always Open!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "HeroWine",
@@ -15,8 +17,10 @@ coffee_houses_list = [
         "x": 2841,
         "y": 3605,
         "description": "Wine Bottles and Wine Glasses, so fancy!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Queenies",
@@ -24,8 +28,10 @@ coffee_houses_list = [
         "x": 1742.25,
         "y": 2822.5,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Pandia Expresso",
@@ -33,8 +39,10 @@ coffee_houses_list = [
         "x": 1879,
         "y": 3280,
         "description": "Coffee & Cigarettes",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Erudite Eats",
@@ -42,8 +50,10 @@ coffee_houses_list = [
         "x": 1701,
         "y": 2906,
         "description": "https://i.imgur.com/t8ECMch.jpeg",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "The White Rabbit",
@@ -51,7 +61,9 @@ coffee_houses_list = [
         "x": 4991.5,
         "y": 4886,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     }
 ]

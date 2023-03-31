@@ -9,8 +9,10 @@ corner_stores_list = [
         "x": 1868,
         "y": 3286,
         "description": "Bandages, Plot Armor, and Copium, Oh My!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Betta Life",
@@ -18,8 +20,10 @@ corner_stores_list = [
         "x": 2313,
         "y": 4404,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "The Patchwork Emporium",
@@ -27,8 +31,10 @@ corner_stores_list = [
         "x": 6717,
         "y": 3561,
         "description": "Custom Patches and Bandages!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Sweet Remedies",
@@ -39,8 +45,10 @@ corner_stores_list = [
         "x": 2673,
         "y": 3917,
         "description": "Medically Beneficial Candies!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Doug's Drugs",
@@ -48,8 +56,10 @@ corner_stores_list = [
         "x": 1427.5,
         "y": 3803,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Fresh Out",
@@ -57,8 +67,10 @@ corner_stores_list = [
         "x": 1770,
         "y": 3615,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Ladywood Apothecary",
@@ -66,8 +78,10 @@ corner_stores_list = [
         "x": 4914,
         "y": 4252,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Sea Witch Publishing",
@@ -77,7 +91,9 @@ corner_stores_list = [
         "x": 2053,
         "y": 3245,
         "description": "Grab a Coffee and read a great book!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     }
 ]

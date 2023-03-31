@@ -8,8 +8,10 @@ pet_stores_list = [
         "x": 4318,
         "y": 4339,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Paleto Pets",
@@ -19,7 +21,9 @@ pet_stores_list = [
         "x": 6653.5,
         "y": 3494.25,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     }
 ]

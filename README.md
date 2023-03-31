@@ -28,17 +28,23 @@ Depending on the type of store it is:
 - To Delete: Find JSON object in the list, delete it,
     - Validate JSON to make sure it is fine
 
+Adding Emojis to title:
+- Get the unicode from the below links to the wiki and usage,
+- See example for Shrugway and have fun! 
+
 ## TODO:
-- Add Wheelchair accessibility as a JSON dict and work with Lucky to process it,
+- Add Wheelchair ratings per store based on Lucky to preadsheet,
+- Make GOOGLE FORM for requested changes to title, desc, pic(s),
 - Change categories to match the one in storefront guidelines,
 - See if scroll/zoom lag can be fixed or smoothened,
 - See if the Map can eb safely compressed further,
-- See if Icons can also be in compressed format
+- See if Icons can also be in compressed format.
 
 # Useful links:
-IMG compressor: https://www.compress2go.com/
-
-LeafletJS: ADDLINKHERE
+- IMG compressor: https://www.compress2go.com/
+- LeafletJS: ADDLINKHERE
+- Unicode (for Emojis) Wiki: https://unicode.org/emoji/charts/full-emoji-list.html
+- Unicode Usage: https://www.w3schools.com/charsets/ref_emoji.asp
 
 ## Contributors
 SimsCat (NoPixel WL - Tommy Melarky)

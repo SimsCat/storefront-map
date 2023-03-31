@@ -6,8 +6,10 @@ repair_shops_list = [
         "x": 2316,
         "y": 2751,
         "description": "We're Always Open!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "The 6STR Tuner Shop",
@@ -17,8 +19,10 @@ repair_shops_list = [
         "x": 645,
         "y": 3760,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Iron Hog Repairs",
@@ -28,8 +32,10 @@ repair_shops_list = [
         "x": 4747,
         "y": 4808,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Otto's Autos",
@@ -37,7 +43,9 @@ repair_shops_list = [
         "x": 2089,
         "y": 4196,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     }
 ]

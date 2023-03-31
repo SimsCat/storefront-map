@@ -6,8 +6,10 @@ electronics_stores_list = [
         "x": 2299,
         "y": 4400,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Digital Den (Little Seoul)",
@@ -15,8 +17,10 @@ electronics_stores_list = [
         "x": 1872.5,
         "y": 3280,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Ericson's Electronics",
@@ -24,8 +28,10 @@ electronics_stores_list = [
         "x": 6773,
         "y": 3655,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Amazoom",
@@ -33,8 +39,10 @@ electronics_stores_list = [
         "x": 1886,
         "y": 3280,
         "description": "Electronics N Stuff",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Rat Shack",
@@ -44,7 +52,9 @@ electronics_stores_list = [
         "x": 2042,
         "y": 3219,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     }
 ]

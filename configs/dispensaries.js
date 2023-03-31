@@ -6,8 +6,10 @@ dispensaries_list = [
         "x": 2755,
         "y": 3659,
         "description": "Joints and Coffee, what else could you ask for?",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Deja Brew",
@@ -17,8 +19,10 @@ dispensaries_list = [
         "x": 2024,
         "y": 3241,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Smoke On The Water",
@@ -28,7 +32,9 @@ dispensaries_list = [
         "x": 2055,
         "y": 3220,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     }
 ]

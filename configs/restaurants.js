@@ -1,15 +1,17 @@
 // List of Restaurants in JSON format to help with processing in code.
 restaurants_list = [
     {
-        "title": "Shrugway",
+        "title": "&#129366; Shrugway &#129366;",
         "pictures": [
             "https://i.imgur.com/0rAd0PM.jpeg"
         ],
         "x": 2376,
         "y": 4469,
         "description": "We're Always* Open!",
-        "wheelchair_accessible_partly": true,
-        "wheelchair_accessible_fully": true
+        "wheelchair": {
+            "rating": 3,
+            "version": "V1"
+        }
     },
     {
         "title": "The Harmony Diner",
@@ -19,8 +21,10 @@ restaurants_list = [
         "x": 4311,
         "y": 4440,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 3,
+            "version": "V1"
+        }
     },
     {
         "title": "The Mojito Inn",
@@ -28,8 +32,10 @@ restaurants_list = [
         "x": 6712,
         "y": 3593,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "The UwU Cafe",
@@ -37,8 +43,10 @@ restaurants_list = [
         "x": 1923,
         "y": 3293,
         "description": "Have an UwU day!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 3,
+            "version": "V1"
+        }
     },
     {
         "title": "Burgershot",
@@ -46,8 +54,10 @@ restaurants_list = [
         "x": 2025,
         "y": 2910,
         "description": "Don't do Murder, Eat a Burger!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Maldini's",
@@ -55,8 +65,10 @@ restaurants_list = [
         "x": 2037,
         "y": 3291,
         "description": "It's Femly",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Rooster's Rest",
@@ -64,7 +76,9 @@ restaurants_list = [
         "x": 2800,
         "y": 3565,
         "description": "Glory to the Cock!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     }
 ]

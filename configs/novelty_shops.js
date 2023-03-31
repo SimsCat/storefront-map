@@ -9,8 +9,10 @@ novelty_shops_list = [
         "x": 6620,
         "y": 3490,
         "description": "We're Always Open!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Plus One",
@@ -18,8 +20,10 @@ novelty_shops_list = [
         "x": 2283.75,
         "y": 4442,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Mcmoo's",
@@ -29,8 +33,10 @@ novelty_shops_list = [
         "x": 6690,
         "y": 3540,
         "description": "A plushie for every occasion!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Lemon Hayes",
@@ -38,8 +44,10 @@ novelty_shops_list = [
         "x": 6766,
         "y": 3647,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Sh!ts and G!ggles",
@@ -47,8 +55,10 @@ novelty_shops_list = [
         "x": 2720,
         "y": 3893,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Bishop's WTF",
@@ -56,8 +66,10 @@ novelty_shops_list = [
         "x": 2750,
         "y": 3710,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "That's Weird",
@@ -65,8 +77,10 @@ novelty_shops_list = [
         "x": 2750,
         "y": 3398,
         "description": "Spooky Solutions and Ghost Tours!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "BLVCKCRAFT",
@@ -74,8 +88,10 @@ novelty_shops_list = [
         "x": 2764,
         "y": 3190,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Crowex",
@@ -83,8 +99,10 @@ novelty_shops_list = [
         "x": 2755,
         "y": 3778,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Mask Rave",
@@ -92,8 +110,10 @@ novelty_shops_list = [
         "x": 2790,
         "y": 3832,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "The Gift Shop",
@@ -101,8 +121,10 @@ novelty_shops_list = [
         "x": 1903,
         "y": 3280,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Pastels",
@@ -112,8 +134,10 @@ novelty_shops_list = [
         "x": 1985,
         "y": 4144,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Underpass Skate Shop",
@@ -123,8 +147,10 @@ novelty_shops_list = [
         "x": 1820,
         "y": 4155,
         "description": "Wicked Skateboards!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Swole Creations",
@@ -134,8 +160,10 @@ novelty_shops_list = [
         "x": 2028,
         "y": 3241.5,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Anime City",
@@ -145,8 +173,10 @@ novelty_shops_list = [
         "x": 2055,
         "y": 3197,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "Gansta's Paradise",
@@ -156,7 +186,9 @@ novelty_shops_list = [
         "x": 1965,
         "y": 2600,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     }
 ]

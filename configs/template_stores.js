@@ -8,8 +8,10 @@ template_stores_list = [
         "x": 2376,
         "y": 4469,
         "description": "We're Always Open!",
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     },
     {
         "title": "The Harmony Diner",
@@ -17,7 +19,9 @@ template_stores_list = [
         "x": 4311,
         "y": 4440,
         "description": null,
-        "wheelchair_accessible_partly": false,
-        "wheelchair_accessible_fully": false
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     }
 ]
