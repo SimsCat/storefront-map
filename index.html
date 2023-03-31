@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="src/leaflet/leaflet.css" />
-    <script src="src/leaflet/leaflet.js"></script>
+    <link rel="stylesheet" href="./src/leaflet/leaflet.css" />
+    <script src="./src/leaflet/leaflet.js"></script>
     <style>
         #map {
             position: absolute; top: 0; bottom: 0; left: 0; right: 0;
@@ -12,6 +12,7 @@
 </head>
 <body>
     <div id = "map"></div>
+    <script type="text/javascript" src="./src/icons.js"></script>
     <script type="text/javascript" src="./configs/restaurants.js"></script>
     <script type="text/javascript" src="./configs/corner_stores.js"></script>
     <script type="text/javascript" src="./configs/novelty_shops.js"></script>
@@ -34,62 +35,9 @@
         var image = L.imageOverlay('./images/GTAV8kRes_10_percent.png', bounds).addTo(map);
         map.fitBounds(bounds);
         /*==================== Icons ====================*/
-        var blackIcon = L.icon({
-            iconUrl: "./images/marker-black.png",
-            shadowUrl: "./images/marker-shadow.png",
-            iconAnchor: [12, 41],
-            shadowAnchor: [12, 41],
-            popupAnchor: [0, -41],
-        })
-        var redIcon = L.icon({
-            iconUrl: "./images/marker-red.png",
-            shadowUrl: "./images/marker-shadow.png",
-            iconAnchor: [12, 41],
-            shadowAnchor: [12, 41],
-            popupAnchor: [0, -41],
-        })
-        var greenIcon = L.icon({
-            iconUrl: "./images/marker-green.png",
-            shadowUrl: "./images/marker-shadow.png",
-            iconAnchor: [12, 41],
-            shadowAnchor: [12, 41],
-            popupAnchor: [0, -41],
-        })
-        var orangeIcon = L.icon({
-            iconUrl: "./images/marker-orange.png",
-            shadowUrl: "./images/marker-shadow.png",
-            iconAnchor: [12, 41],
-            shadowAnchor: [12, 41],
-            popupAnchor: [0, -41],
-        })
-        var pinkIcon = L.icon({
-            iconUrl: "./images/marker-pink.png",
-            shadowUrl: "./images/marker-shadow.png",
-            iconAnchor: [12, 41],
-            shadowAnchor: [12, 41],
-            popupAnchor: [0, -41],
-        })
-        var purpleIcon = L.icon({
-            iconUrl: "./images/marker-purple.png",
-            shadowUrl: "./images/marker-shadow.png",
-            iconAnchor: [12, 41],
-            shadowAnchor: [12, 41],
-            popupAnchor: [0, -41],
-        })
-        var whiteIcon = L.icon({
-            iconUrl: "./images/marker-white.png",
-            shadowUrl: "./images/marker-shadow.png",
-            iconAnchor: [12, 41],
-            shadowAnchor: [12, 41],
-            popupAnchor: [0, -41],
-        })
-        var tealIcon = L.icon({
-            iconUrl: "./images/marker-teal.png",
-            shadowUrl: "./images/marker-shadow.png",
-            iconAnchor: [12, 41],
-            shadowAnchor: [12, 41],
-            popupAnchor: [0, -41],
-        })
+
+        // Icons now imported at the top
+
         /*==================== Restaurants ====================*/
 
         restaurants_markers = create_marker_list(restaurants_list, redIcon)
@@ -133,6 +81,7 @@
         /*==================== Easter Eggs ====================*/
         //var norman = L.marker([5930, 5870]).bindPopup('Normans Dumbass House').addTo(map);
         //var center = L.marker ([4000, 4000]).bindPopup('Center of Map').addTo(map);
+        // TODO: Better to throw this into a stand HTML element and fixed to bottom of page
         var marker = new L.marker([39.5, -77.3], { opacity: 0.01 }); //opacity may be set to zero
         marker.bindTooltip(
             "<h2>This site is still a work in progress, <br>contact <br>@MelarkyNP / @thethirdwheelfm on Twitter <br>or Attend Dant in-city <br>or Ham#2848 On Discord <br>for info/attribution to your storefront's marker!</h2>", {permanent: true, className: "my-label", offset: [0, 0] }
