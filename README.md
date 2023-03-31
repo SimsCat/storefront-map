@@ -35,6 +35,7 @@ Adding Emojis to title:
 ## TODO:
 - Add Wheelchair ratings per store based on Lucky to preadsheet,
 - Make GOOGLE FORM for requested changes to title, desc, pic(s),
+- Need to add a favicon.ico,
 - Change categories to match the one in storefront guidelines,
 - See if scroll/zoom lag can be fixed or smoothened,
 - See if the Map can eb safely compressed further,
@@ -45,6 +46,7 @@ Adding Emojis to title:
 - LeafletJS: ADDLINKHERE
 - Unicode (for Emojis) Wiki: https://unicode.org/emoji/charts/full-emoji-list.html
 - Unicode Usage: https://www.w3schools.com/charsets/ref_emoji.asp
+- USed to try smooth scroll/zoom: https://leafletjs.com/examples/zoom-levels/ https://gis.stackexchange.com/questions/298618/leaflet-on-mouse-wheel-event-change-zoom-by-delta 
 
 ## Contributors
 SimsCat (NoPixel WL - Tommy Melarky)

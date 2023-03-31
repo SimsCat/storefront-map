@@ -31,7 +31,11 @@
         /*==================== GTA Map ====================*/
         var map = L.map('map', {
             crs: L.CRS.Simple,
-            minZoom: -3.0
+            minZoom: -3.0,
+            zoomDelta: 0.5,
+            zoomSnap: 0.005,
+            zoomAnimationThreshold: 20,
+            wheelPxPerZoomLevel: 20
         });
         var bounds = [[0,0], [8000,8000]];
         var image = L.imageOverlay('./images/GTAV8kRes_10_percent.png', bounds).addTo(map);
