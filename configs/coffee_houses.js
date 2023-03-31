@@ -5,7 +5,7 @@ coffee_houses_list = [
         "pictures": null,
         "x": 2762,
         "y": 3265,
-        "description": "We're Always Open!",
+        "description": null,
         "wheelchair": {
             "rating": 0,
             "version": null
