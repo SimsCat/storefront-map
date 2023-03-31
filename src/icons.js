@@ -55,3 +55,10 @@ var tealIcon = L.icon({
     shadowAnchor: [12, 41],
     popupAnchor: [0, -41],
 })
+var blueIcon = L.icon({
+    iconUrl: "./images/marker-icon.png",
+    shadowUrl: "./images/marker-shadow.png",
+    iconAnchor: [12, 41],
+    shadowAnchor: [12, 41],
+    popupAnchor: [0, -41],
+})
