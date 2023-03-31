@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./src/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="./src/leaflet/leaflet.css"/>
+    <link rel="stylesheet" href="./src/custom.css"/>
     <script src="./src/leaflet/leaflet.js"></script>
     <script src="https://kit.fontawesome.com/dda9c078d2.js" crossorigin="anonymous"></script>
     <style>
@@ -87,12 +88,6 @@
         /*==================== Easter Eggs ====================*/
         //var norman = L.marker([5930, 5870]).bindPopup('Normans Dumbass House').addTo(map);
         //var center = L.marker ([4000, 4000]).bindPopup('Center of Map').addTo(map);
-        // TODO: Better to throw this into a stand HTML element and fixed to bottom of page
-        var marker = new L.marker([39.5, -77.3], { opacity: 0.01 }); //opacity may be set to zero
-        marker.bindTooltip(
-            "<h2>This site is still a work in progress, <br>contact <br>@MelarkyNP / @thethirdwheelfm on Twitter <br>or Attend Dant in-city <br>or Ham#2848 On Discord <br>for info/attribution to your storefront's marker!</h2>", {permanent: true, className: "my-label", offset: [0, 0] }
-        );
-        marker.addTo(map);
         /*==================== Layers ====================*/
         var cornerStores = L.layerGroup(corner_stores_markers);
         var restaurants = L.layerGroup(restaurants_markers);
@@ -129,5 +124,13 @@
         };
         L.control.layers(0, overlayMaps).addTo(map);
     </script>
+    <div class="authors">
+        <!--             This site is still a work in progress, contact The Authors>@MelarkyNP / @TheThirdWheelFM on Twitter <br>or Attend Dant in-city or Ham#2848 On Discord for info/attribution to your storefront's marker! -->
+        <h2>
+            This site is still a work in progress, contact the authors below for info/attribution to your storefront's marker!<br>
+            Author 1: @MelarkyNP on Twitter,<br>
+            Author 2: Atten Dant in-city / @thethirdwheelfm on Twitter / Ham#2848 On Discord.
+        </h2>
+    </div>
 </body>
 </html>
