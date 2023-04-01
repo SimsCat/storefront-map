@@ -40,6 +40,11 @@ Adding Emojis to title:
 - See if scroll/zoom lag can be fixed or smoothened,
 - See if the Map can eb safely compressed further,
 - See if Icons can also be in compressed format.
+- Add map accessibility info: https://leafletjs.com/examples/accessibility/
+- GEOJSON improvement: https://leafletjs.com/examples/geojson/
+- See if it is possible to do https://lsstorefronts.com/<storename> - we may need to add a key field for each store and then everyone can us their link with marker showing. - https://leafletjs.com/reference.html#util-getparamstring ?
+- Tootip: https://leafletjs.com/reference.html#tooltip,
+
 
 # Useful links:
 - IMG compressor: https://www.compress2go.com/
