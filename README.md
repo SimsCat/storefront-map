@@ -1,6 +1,8 @@
 # storefront-map
 A Map of all the stores in Nopixel
 
+Forms link for users to submit update requests: https://forms.gle/vCxQKJSVGqoJoWtYA
+
 ## How to run
 
 ### Requirements:
@@ -51,7 +53,7 @@ Adding Emojis to title:
 - LeafletJS: ADDLINKHERE
 - Unicode (for Emojis) Wiki: https://unicode.org/emoji/charts/full-emoji-list.html
 - Unicode Usage: https://www.w3schools.com/charsets/ref_emoji.asp
-- USed to try smooth scroll/zoom: https://leafletjs.com/examples/zoom-levels/ https://gis.stackexchange.com/questions/298618/leaflet-on-mouse-wheel-event-change-zoom-by-delta 
+- Used to try smooth scroll/zoom: https://leafletjs.com/examples/zoom-levels/ https://gis.stackexchange.com/questions/298618/leaflet-on-mouse-wheel-event-change-zoom-by-delta 
 
 ## Contributors
 SimsCat (NoPixel WL - Tommy Melarky)
