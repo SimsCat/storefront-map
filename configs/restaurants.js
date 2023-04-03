@@ -50,7 +50,9 @@ restaurants_list = [
     },
     {
         "title": "Burgershot",
-        "pictures": null,
+        "pictures": [
+            "https://i.imgur.com/iShnVcB.png"
+        ],
         "x": 2025,
         "y": 2910,
         "description": "Don't do Murder, Eat a Burger!",
