@@ -20,7 +20,7 @@ supply_stores_list = [
         "y": 4420.5,
         "description": null,
         "wheelchair": {
-            "rating": 0,
+            "rating": 2.5,
             "version": null
         }
     },
@@ -75,7 +75,7 @@ supply_stores_list = [
         "y": 3553.5,
         "description": "A Bee Keeper Paradise!",
         "wheelchair": {
-            "rating": 0,
+            "rating": 3,
             "version": null
         }
     },
@@ -86,7 +86,7 @@ supply_stores_list = [
         "y": 3549,
         "description": null,
         "wheelchair": {
-            "rating": 0,
+            "rating": 3,
             "version": null
         }
     },
@@ -97,7 +97,7 @@ supply_stores_list = [
         "y": 3357,
         "description": null,
         "wheelchair": {
-            "rating": 0,
+            "rating": 3,
             "version": null
         }
     },
@@ -119,7 +119,7 @@ supply_stores_list = [
         "y": 2946.5,
         "description": "Instruments and Music Supplies!",
         "wheelchair": {
-            "rating": 0,
+            "rating": 3,
             "version": null
         }
     },
@@ -143,7 +143,7 @@ supply_stores_list = [
         "y": 5182,
         "description": null,
         "wheelchair": {
-            "rating": 0,
+            "rating": 3,
             "version": null
         }
     },
@@ -221,7 +221,7 @@ supply_stores_list = [
         "y": 4925,
         "description": null,
         "wheelchair": {
-            "rating": 0,
+            "rating": 3,
             "version": null
         }
     }
