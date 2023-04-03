@@ -211,5 +211,18 @@ supply_stores_list = [
             "rating": 0,
             "version": null
         }
+    },
+        {
+        "title": "<strike>Sai Carter's</strike> Flop Dugong's Gun Emporium",
+        "pictures": [
+            "https://i.imgur.com/kPekNy2.jpeg"
+        ],
+        "x": 1765,
+        "y": 4415,
+        "description": "Co-Owned by Jeffrey Bundy",
+        "wheelchair": {
+            "rating": 0,
+            "version": null
+        }
     }
 ]
