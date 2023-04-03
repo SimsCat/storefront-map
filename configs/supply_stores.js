@@ -187,19 +187,6 @@ supply_stores_list = [
         }
     },
     {
-        "title": "Flop Dugong's Gun Emporium Co-Owned by Jeffrey Bundy",
-        "pictures": [
-            "https://i.imgur.com/kPekNy2.jpeg"
-        ],
-        "x": 1765,
-        "y": 4415,
-        "description": "<strike>Sai Carter's</strike> Flop Dugong's Gun Emporium",
-        "wheelchair": {
-            "rating": 0,
-            "version": null
-        }
-    },
-    {
         "title": "Pussy Cat",
         "pictures": [
             "https://i.imgur.com/OlUc7sj.png"
