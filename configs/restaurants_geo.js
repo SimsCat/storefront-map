@@ -1,12 +1,61 @@
 // List of Restaurants in JSON format to help with processing in code.
-restaurants_list = [
+restaurants_geo_list = [
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [2400, 4600]
+        },
+        "properties": {
+            "key": "shrugway_geo",
+            "title": "&#129366; Shrugway_geo &#129366;",
+            "pictures": [
+                "https://i.imgur.com/0rAd0PM.jpeg"
+            ],
+            "description": "We're Always* Open!",
+            "wheelchair": {
+                "rating": 3,
+                "version": "V1"
+            },
+            "popupContent": "shrugtest"
+        }
+    }
+]
+
+lightRailStop = {
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "popupContent": "18th & California Light Rail Stop"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [1000, 1000]
+            }
+        },{
+            "type": "Feature",
+            "properties": {
+                "popupContent": "20th & Welton Light Rail Stop"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [1000, 1000]
+            }
+        }
+    ]
+};
+
+
+temp_var = [
     {
         "type": "Feature",
         "geometry": {
             "type": "Point",
             "coordinates": [
-                4469,
-                2376
+                2376,
+                4469
             ]
         },
         "properties": {
@@ -19,7 +68,8 @@ restaurants_list = [
             "wheelchair": {
                 "rating": 3,
                 "version": "V1"
-            }
+            },
+            "popupContent": "shrugtest-donotuseanduseotherfunction"
         }
     },
     {
@@ -27,8 +77,8 @@ restaurants_list = [
         "geometry": {
             "type": "Point",
             "coordinates": [
-                4440,
-                4311
+                4311,
+                4440
             ]
         },
         "properties": {
@@ -42,6 +92,7 @@ restaurants_list = [
                 "rating": 3,
                 "version": "V1"
             },
+            "popupContent": "shrugtest-donotuseanduseotherfunction"
         }
     },
     {
@@ -49,8 +100,8 @@ restaurants_list = [
         "geometry": {
             "type": "Point",
             "coordinates": [
-                3593,
-                6712
+                6712,
+                3593
             ]
         },
         "properties": {
@@ -61,6 +112,7 @@ restaurants_list = [
                 "rating": 0,
                 "version": null
             },
+            "popupContent": "shrugtest-donotuseanduseotherfunction"
         }
     },
     {
@@ -68,8 +120,8 @@ restaurants_list = [
         "geometry": {
             "type": "Point",
             "coordinates": [
-                3293,
-                1923
+                1923,
+                3293
             ]
         },
         "properties": {
@@ -80,6 +132,7 @@ restaurants_list = [
                 "rating": 3,
                 "version": "V1"
             },
+            "popupContent": "shrugtest-donotuseanduseotherfunction"
         }
     },
     {
@@ -87,8 +140,8 @@ restaurants_list = [
         "geometry": {
             "type": "Point",
             "coordinates": [
-                2910,
-                2025
+                2025,
+                2910
             ]
         },
         "properties": {
@@ -98,7 +151,8 @@ restaurants_list = [
             "wheelchair": {
                 "rating": 0,
                 "version": null
-            }
+            },
+            "popupContent": "shrugtest-donotuseanduseotherfunction"
         }
     },
     {
@@ -106,8 +160,8 @@ restaurants_list = [
         "geometry": {
             "type": "Point",
             "coordinates": [
-                3291,
-                2037
+                2037,
+                3291
             ]
         },
         "properties": {
@@ -117,7 +171,8 @@ restaurants_list = [
             "wheelchair": {
                 "rating": 0,
                 "version": null
-            }
+            },
+            "popupContent": "shrugtest-donotuseanduseotherfunction"
         }
     },
     {
@@ -125,8 +180,8 @@ restaurants_list = [
         "geometry": {
             "type": "Point",
             "coordinates": [
-                3565,
-                2800
+                2800,
+                3565
             ]
         },
         "properties": {
@@ -136,7 +191,8 @@ restaurants_list = [
             "wheelchair": {
                 "rating": 0,
                 "version": null
-            }
+            },
+            "popupContent": "shrugtest-donotuseanduseotherfunction"
         }
     }
 ]

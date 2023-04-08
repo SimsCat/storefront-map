@@ -24,7 +24,7 @@ function create_wheelchair_str(wheelchair) {
     var rating_text = get_wheelchair_rating_text(wheelchair.rating);
     var rating_colour = get_wheelchair_rating_colour(wheelchair.rating);
     var wheelchair_version_str = get_wheelchair_version_str(wheelchair.version)
-    console.log("rating_text ", rating_text)
+    // console.log("rating_text ", rating_text)
     var processed_str = "<p style='color:".concat(
         rating_colour,
         "'><i class='fa-solid fa-wheelchair'></i> ",
@@ -65,6 +65,7 @@ function create_marker_str(title, desc, pictures, wheelchair) {
 
 // Create Marker list given json
 function create_marker_list(current_store_list, matching_icon) {
+    // discontinued
     var current_markers = []
     var marker_str;
     current_store_list.forEach(function (item, index) {
@@ -85,4 +86,67 @@ function create_marker_list(current_store_list, matching_icon) {
         current_markers.push(marker);
     });
     return current_markers;
+}
+
+function convert_stores_togeos(stores) {
+    // convert to geogjson
+    var current_geos = []
+    stores.forEach(function (item, index) {
+        //console.log(item, index);
+
+        current_geo = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [item.y, item.x]
+            },
+            "properties": {
+                "key": item.key,
+                "title": item.title,
+                "pictures": item.pictures,
+                "description": item.description,
+                "wheelchair": item.wheelchair,
+                //"popupContent": "shrugtest-donotuseanduseotherfunction",
+                //"Owner Full Name": "",
+                //"Owner State ID": "",
+                //"OWner P#": "",
+                // deal with coloured icon
+            }
+        }
+        current_geos.push(current_geo)
+        //console.log("geojson for ", item.title, geojson);
+    });
+    //console.log("geojsons ", current_geos);
+    return current_geos
+}
+
+function onEachFeature(feature, layer) {
+    // does this feature have a property named popupContent?
+    //console.log("onEachFeature test")
+    if (feature.properties) {
+        marker_str = create_marker_str(
+            feature.properties.title,
+            feature.properties.description,
+            feature.properties.pictures,
+            feature.properties.wheelchair
+        )
+        //console.log("onEachFeature test2 ", marker_str)
+        //marker_str = "HAmish"
+        layer.bindPopup(
+            marker_str
+        );
+    }
+};
+
+function create_geoJSON_layer(geo_list, icon) {
+    return L.geoJSON(geo_list, {
+        onEachFeature: onEachFeature,
+        pointToLayer: function (feature, latlng) {
+            return L.marker(
+                latlng, {
+                        icon: icon,
+                    }
+                );
+        }
+    }).addTo(map);
 }

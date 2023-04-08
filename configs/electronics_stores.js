@@ -1,60 +1,100 @@
 // List of Electronics stores in JSON format to help with processing in code.
 electronics_stores_list = [
     {
-        "title": "Digital Den (Mirror Park)",
-        "pictures": null,
-        "x": 2299,
-        "y": 4400,
-        "description": null,
-        "wheelchair": {
-            "rating": 0,
-            "version": null
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4400,
+                2299
+            ]
+        },
+        "properties": {
+            "title": "Digital Den (Mirror Park)",
+            "pictures": null,
+            "description": null,
+            "wheelchair": {
+                "rating": 0,
+                "version": null
+            }
         }
     },
     {
-        "title": "Digital Den (Little Seoul)",
-        "pictures": null,
-        "x": 1872.5,
-        "y": 3280,
-        "description": null,
-        "wheelchair": {
-            "rating": 0,
-            "version": null
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                3280,
+                1872.5
+            ]
+        },
+        "properties": {
+            "title": "Digital Den (Little Seoul)",
+            "pictures": null,
+            "description": null,
+            "wheelchair": {
+                "rating": 0,
+                "version": null
+            }
         }
     },
     {
-        "title": "Ericson's Electronics",
-        "pictures": null,
-        "x": 6773,
-        "y": 3655,
-        "description": null,
-        "wheelchair": {
-            "rating": 0,
-            "version": null
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                3655,
+                6773
+            ]
+        },
+        "properties": {
+            "title": "Ericson's Electronics",
+            "pictures": null,
+            "description": null,
+            "wheelchair": {
+                "rating": 0,
+                "version": null
+            }
         }
     },
     {
-        "title": "Amazoom",
-        "pictures": null,
-        "x": 1886,
-        "y": 3280,
-        "description": "Electronics N Stuff",
-        "wheelchair": {
-            "rating": 0,
-            "version": null
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                3280,
+                1886
+            ]
+        },
+        "properties": {
+            "title": "Amazoom",
+            "pictures": null,
+            "description": "Electronics N Stuff",
+            "wheelchair": {
+                "rating": 0,
+                "version": null
+            }
         }
     },
     {
-        "title": "Rat Shack",
-        "pictures": [
-            "https://i.imgur.com/QecUNLU.png"
-        ],
-        "x": 2042,
-        "y": 3219,
-        "description": null,
-        "wheelchair": {
-            "rating": 0,
-            "version": null
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                3219,
+                2042
+            ]
+        },
+        "properties": {
+            "title": "Rat Shack",
+            "pictures": [
+                "https://i.imgur.com/QecUNLU.png"
+            ],
+            "description": null,
+            "wheelchair": {
+                "rating": 0,
+                "version": null
+            }
         }
     }
 ]

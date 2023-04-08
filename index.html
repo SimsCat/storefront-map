@@ -15,6 +15,8 @@
 <body>
     <div id = "map"></div>
     <script type="text/javascript" src="./src/icons.js"></script>
+    <!-- <script type="text/javascript" src="./configs_geo/restaurants.js"></script> -->
+
     <script type="text/javascript" src="./configs/restaurants.js"></script>
     <script type="text/javascript" src="./configs/corner_stores.js"></script>
     <script type="text/javascript" src="./configs/novelty_shops.js"></script>
@@ -41,56 +43,78 @@
         var bounds = [[0,0], [8000,8000]];
         var image = L.imageOverlay('./images/GTAV8kRes_10_percent.png', bounds).addTo(map);
         map.fitBounds(bounds);
+
+        /*
+        // convert store to geos - use when lucky updates
+        store_list_geos = [
+            restaurants_list,
+            corner_stores_list,
+            novelty_shops_list,
+            dispensaries_list,
+            supply_stores_list,
+            pet_stores_list,
+            recreational_stores_list,
+            electronics_stores_list,
+            coffee_houses_list,
+            repair_shops_list
+        ]
+
+        store_list_geos.forEach(function (item, index) {
+            console.log("geojsons ", convert_stores_togeos(item));
+        });
+
+        */
         /*==================== Icons ====================*/
 
         // Icons now imported at the top
 
         /*==================== Restaurants ====================*/
 
-        restaurants_markers = create_marker_list(restaurants_list, redIcon)
+        var restaurants_layer = create_geoJSON_layer(restaurants_list, redIcon);
 
         /*==================== Corner Stores ====================*/
 
-        corner_stores_markers = create_marker_list(corner_stores_list, blueIcon)
+        var corner_stores_layer = create_geoJSON_layer(corner_stores_list, blueIcon);
 
         /*==================== Novelty Shops ====================*/
 
-        novelty_shops_markers = create_marker_list(novelty_shops_list, blueIcon)
-        
+        var novelty_shops_layer = create_geoJSON_layer(novelty_shops_list, blueIcon);
+
         /*====================== Dispensaries ======================*/
 
-        dispensaries_markers = create_marker_list(dispensaries_list, greenIcon)
+        var dispensaries_layer = create_geoJSON_layer(dispensaries_list, greenIcon);
 
         /*====================== Supply Stores ======================*/
 
-        supply_stores_markers = create_marker_list(supply_stores_list, blackIcon)
+        var supply_stores_layer = create_geoJSON_layer(supply_stores_list, blackIcon);
 
         /*==================== Pet Stores ====================*/
 
-        pet_stores_markers = create_marker_list(pet_stores_list, whiteIcon)
+        var pet_stores_layer = create_geoJSON_layer(pet_stores_list, whiteIcon);
 
         /*==================== Recreation ====================*/
 
-        recreational_stores_markers = create_marker_list(recreational_stores_list, pinkIcon)
+        var recreational_stores_layer = create_geoJSON_layer(recreational_stores_list, pinkIcon);
 
         /*==================== Electronics ====================*/
 
-        electronics_stores_markers = create_marker_list(electronics_stores_list, purpleIcon)
+        var electronics_stores_layer = create_geoJSON_layer(electronics_stores_list, purpleIcon);
 
         /*==================== Coffee Houses ====================*/
 
-        coffee_houses_markers = create_marker_list(coffee_houses_list, orangeIcon)
+        var coffee_houses_layer = create_geoJSON_layer(coffee_houses_list, orangeIcon);
 
         /*==================== Repair Shops ====================*/
 
-        repair_shops_markers = create_marker_list(repair_shops_list, tealIcon)
+        var repair_shops_layer = create_geoJSON_layer(repair_shops_list, tealIcon);
 
         /*==================== Easter Eggs ====================*/
         //var norman = L.marker([5930, 5870]).bindPopup('Normans Dumbass House').addTo(map);
         //var center = L.marker ([4000, 4000]).bindPopup('Center of Map').addTo(map);
         /*==================== Layers ====================*/
+        /*
         var cornerStores = L.layerGroup(corner_stores_markers);
-        var restaurants = L.layerGroup(restaurants_markers);
+        //var restaurants = L.layerGroup(restaurants_markers);
         var noveltyShops = L.layerGroup(novelty_shops_markers);
         var dispensaries = L.layerGroup(dispensaries_markers);
         var hardwareStores = L.layerGroup(supply_stores_markers);
@@ -99,30 +123,34 @@
         var electronics = L.layerGroup(electronics_stores_markers);
         var coffee_houses = L.layerGroup(coffee_houses_markers);
         var repairShop = L.layerGroup(repair_shops_markers);
+        */
         /*==================== Leaflet Layer Control ====================*/
-        map.addLayer(restaurants)
-        map.addLayer(cornerStores)
-        map.addLayer(noveltyShops)
-        map.addLayer(dispensaries)
-        map.addLayer(hardwareStores)
-        map.addLayer(petStores)
-        map.addLayer(recreation)
-        map.addLayer(electronics)
-        map.addLayer(coffee_houses)
-        map.addLayer(repairShop)
+        map.addLayer(restaurants_layer);
+        map.addLayer(corner_stores_layer);
+        map.addLayer(novelty_shops_layer);
+        map.addLayer(dispensaries_layer);
+        map.addLayer(supply_stores_layer);
+        map.addLayer(pet_stores_layer);
+        map.addLayer(recreational_stores_layer);
+        map.addLayer(electronics_stores_layer);
+        map.addLayer(coffee_houses_layer);
+        map.addLayer(repair_shops_layer);
+
         var overlayMaps = {
-            'Restaurants (Staffed Food Establishments)': restaurants, 
-            'Corner Stores (Bandaids, Armor)': cornerStores, 
-            'Novelty Shops (Plushies, Collectables)': noveltyShops, 
-            'Dispensaries (Joints, Cigs)': dispensaries, 
-            'Supply Stores (Tools, Supplies)': hardwareStores, 
-            'Pet Stores (For Pets)': petStores,
-            'Recreational (You know, Fun Stuff)': recreation,
-            'Electronics (Phones, Laptops, VPNs)': electronics,
-            'Coffee Houses & Beverage (Coffee, Wine)': coffee_houses,
-            'Mechanics & Repair Shops': repairShop,
+            'Restaurants (Staffed Food Establishments)': restaurants_layer, 
+            'Corner Stores (Bandaids, Armor)': corner_stores_layer, 
+            'Novelty Shops (Plushies, Collectables)': novelty_shops_layer, 
+            'Dispensaries (Joints, Cigs)': dispensaries_layer, 
+            'Supply Stores (Tools, Supplies)': supply_stores_layer, 
+            'Pet Stores (For Pets)': pet_stores_layer,
+            'Recreational (You know, Fun Stuff)': recreational_stores_layer,
+            'Electronics (Phones, Laptops, VPNs)': electronics_stores_layer,
+            'Coffee Houses & Beverage (Coffee, Wine)': coffee_houses_layer,
+            'Mechanics & Repair Shops': repair_shops_layer,
         };
+
         L.control.layers(0, overlayMaps).addTo(map);
+
     </script>
     <div class="authors">
         <!--             This site is still a work in progress, contact The Authors>@MelarkyNP / @TheThirdWheelFM on Twitter <br>or Attend Dant in-city or Ham#2848 On Discord for info/attribution to your storefront's marker! -->
