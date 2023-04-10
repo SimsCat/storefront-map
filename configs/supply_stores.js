@@ -10,6 +10,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "harmony_hardware",
             "title": "Harmony Hardware",
             "pictures": [
                 "https://i.imgur.com/JxsOA8L.jpeg"
@@ -31,6 +32,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "hoe_depot",
             "title": "Hoe Depot",
             "pictures": null,
             "description": null,
@@ -50,6 +52,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "lizard_dix",
             "title": "Lizard Dix",
             "pictures": null,
             "description": null,
@@ -69,6 +72,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "pure_lube",
             "title": "Pure Lube",
             "pictures": null,
             "description": "Bike Armor and Repair Kits!",
@@ -88,6 +92,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "brians_beauty_boutique",
             "title": "Brian's Beauty Boutique",
             "pictures": null,
             "description": null,
@@ -107,6 +112,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "vinewood_video",
             "title": "Vinewood Video",
             "pictures": null,
             "description": "Lights, Cameras, Microphones, Action!",
@@ -126,6 +132,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "plan_bee",
             "title": "Plan Bee",
             "pictures": null,
             "description": "A Bee Keeper Paradise!",
@@ -145,6 +152,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "big_pussys_locksmith",
             "title": "Big Pussy's Locksmith",
             "pictures": null,
             "description": null,
@@ -164,6 +172,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "bilge__co",
             "title": "Bilge & Co.",
             "pictures": null,
             "description": null,
@@ -183,6 +192,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "hard_on_tools",
             "title": "Hard On Tools",
             "pictures": null,
             "description": null,
@@ -202,6 +212,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "deez_notes",
             "title": "Deez Notes",
             "pictures": null,
             "description": "Instruments and Music Supplies!",
@@ -221,6 +232,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "greener_pastures",
             "title": "Greener Pastures",
             "pictures": null,
             "description": null,
@@ -240,6 +252,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "sandy_shores_recycling_center",
             "title": "Sandy Shores Recycling Center",
             "pictures": [
                 "https://i.imgur.com/O0xSyQ0.jpeg"
@@ -261,6 +274,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "multlocks",
             "title": "Mul-T-Locks",
             "pictures": [
                 "https://i.imgur.com/ZQhdXbX.jpeg"
@@ -282,6 +296,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "the_pit_stop",
             "title": "The Pit Stop",
             "pictures": [
                 "https://i.imgur.com/nWyHnot.png"
@@ -303,6 +318,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "nailed_it_hardware",
             "title": "Nailed It Hardware",
             "pictures": [
                 "https://i.imgur.com/95C9Z4F.png"
@@ -324,6 +340,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "flop_dugongs_gun_emporium_coowned_by_jeffrey_bundy",
             "title": "Flop Dugong's Gun Emporium Co-Owned by Jeffrey Bundy",
             "pictures": [
                 "https://i.imgur.com/kPekNy2.jpeg"
@@ -345,6 +362,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "pussy_cat",
             "title": "Pussy Cat",
             "pictures": [
                 "https://i.imgur.com/OlUc7sj.png"
@@ -366,6 +384,7 @@ supply_stores_list = [
             ]
         },
         "properties": {
+            "key": "the_speed_trap",
             "title": "The Speed Trap",
             "pictures": [
                 "https://i.imgur.com/b2WOEH1.jpeg"

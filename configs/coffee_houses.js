@@ -10,6 +10,7 @@ coffee_houses_list = [
             ]
         },
         "properties": {
+            "key": "bean_machine",
             "title": "Bean Machine",
             "pictures": null,
             "description": null,
@@ -29,6 +30,7 @@ coffee_houses_list = [
             ]
         },
         "properties": {
+            "key": "herowine",
             "title": "HeroWine",
             "pictures": null,
             "description": "Wine Bottles and Wine Glasses, so fancy!",
@@ -48,6 +50,7 @@ coffee_houses_list = [
             ]
         },
         "properties": {
+            "key": "queenies",
             "title": "Queenies",
             "pictures": null,
             "description": null,
@@ -67,6 +70,7 @@ coffee_houses_list = [
             ]
         },
         "properties": {
+            "key": "pandia_expresso",
             "title": "Pandia Expresso",
             "pictures": null,
             "description": "Coffee & Cigarettes",
@@ -86,6 +90,7 @@ coffee_houses_list = [
             ]
         },
         "properties": {
+            "key": "erudite_eats",
             "title": "Erudite Eats",
             "pictures": null,
             "description": "https://i.imgur.com/t8ECMch.jpeg",
@@ -105,6 +110,7 @@ coffee_houses_list = [
             ]
         },
         "properties": {
+            "key": "the_white_rabbit",
             "title": "The White Rabbit",
             "pictures": null,
             "description": null,

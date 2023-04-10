@@ -10,6 +10,7 @@ repair_shops_list = [
             ]
         },
         "properties": {
+            "key": "hayes_auto_body_repairs",
             "title": "Hayes Auto Body Repairs",
             "pictures": null,
             "description": "We're Always Open!",
@@ -29,6 +30,7 @@ repair_shops_list = [
             ]
         },
         "properties": {
+            "key": "the_6str_tuner_shop",
             "title": "The 6STR Tuner Shop",
             "pictures": [
                 "https://media.discordapp.net/attachments/876967826227863583/900314032689528852/tunerfix.gif"
@@ -50,6 +52,7 @@ repair_shops_list = [
             ]
         },
         "properties": {
+            "key": "iron_hog_repairs",
             "title": "Iron Hog Repairs",
             "pictures": [
                 "https://i.imgur.com/e5GMWoZ.jpeg"
@@ -71,6 +74,7 @@ repair_shops_list = [
             ]
         },
         "properties": {
+            "key": "ottos_autos",
             "title": "Otto's Autos",
             "pictures": null,
             "description": null,

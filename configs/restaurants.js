@@ -32,7 +32,7 @@ restaurants_list = [
             ]
         },
         "properties": {
-            "key": "The_Harmony_Diner",
+            "key": "the_harmony_diner",
             "title": "The Harmony Diner",
             "pictures": [
                 "https://i.imgur.com/amSbTTy.jpeg"
@@ -41,7 +41,7 @@ restaurants_list = [
             "wheelchair": {
                 "rating": 3,
                 "version": "V1"
-            },
+            }
         }
     },
     {
@@ -54,13 +54,14 @@ restaurants_list = [
             ]
         },
         "properties": {
+            "key": "the_mojito_inn",
             "title": "The Mojito Inn",
             "pictures": null,
             "description": null,
             "wheelchair": {
                 "rating": 0,
                 "version": null
-            },
+            }
         }
     },
     {
@@ -73,13 +74,14 @@ restaurants_list = [
             ]
         },
         "properties": {
+            "key": "the_uwu_cafe",
             "title": "The UwU Cafe",
             "pictures": null,
             "description": "Have an UwU day!",
             "wheelchair": {
                 "rating": 3,
                 "version": "V1"
-            },
+            }
         }
     },
     {
@@ -92,6 +94,7 @@ restaurants_list = [
             ]
         },
         "properties": {
+            "key": "burgershot",
             "title": "Burgershot",
             "pictures": null,
             "description": "Don't do Murder, Eat a Burger!",
@@ -111,6 +114,7 @@ restaurants_list = [
             ]
         },
         "properties": {
+            "key": "maldinis",
             "title": "Maldini's",
             "pictures": null,
             "description": "It's Femly",
@@ -130,6 +134,7 @@ restaurants_list = [
             ]
         },
         "properties": {
+            "key": "roosters_rest",
             "title": "Rooster's Rest",
             "pictures": null,
             "description": "Glory to the Cock!",

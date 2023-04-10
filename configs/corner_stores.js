@@ -10,6 +10,7 @@ corner_stores_list = [
             ]
         },
         "properties": {
+            "key": "flops_shop",
             "title": "Flop's Shop",
             "pictures": [
                 "https://i.imgur.com/uoOiarq.jpeg",
@@ -32,6 +33,7 @@ corner_stores_list = [
             ]
         },
         "properties": {
+            "key": "betta_life",
             "title": "Betta Life",
             "pictures": null,
             "description": null,
@@ -51,6 +53,7 @@ corner_stores_list = [
             ]
         },
         "properties": {
+            "key": "the_patchwork_emporium",
             "title": "The Patchwork Emporium",
             "pictures": null,
             "description": "Custom Patches and Bandages!",
@@ -70,6 +73,7 @@ corner_stores_list = [
             ]
         },
         "properties": {
+            "key": "sweet_remedies",
             "title": "Sweet Remedies",
             "pictures": [
                 "https://media.discordapp.net/attachments/954827812244693002/1071597239862038620/Sign2.png",
@@ -92,6 +96,7 @@ corner_stores_list = [
             ]
         },
         "properties": {
+            "key": "dougs_drugs",
             "title": "Doug's Drugs",
             "pictures": null,
             "description": null,
@@ -111,6 +116,7 @@ corner_stores_list = [
             ]
         },
         "properties": {
+            "key": "fresh_out",
             "title": "Fresh Out",
             "pictures": null,
             "description": null,
@@ -130,6 +136,7 @@ corner_stores_list = [
             ]
         },
         "properties": {
+            "key": "ladywood_apothecary",
             "title": "Ladywood Apothecary",
             "pictures": null,
             "description": null,
@@ -149,6 +156,7 @@ corner_stores_list = [
             ]
         },
         "properties": {
+            "key": "sea_witch_publishing",
             "title": "Sea Witch Publishing",
             "pictures": [
                 "https://i.imgur.com/U1BSHVM.png"

@@ -10,6 +10,7 @@ pet_stores_list = [
             ]
         },
         "properties": {
+            "key": "little_paws",
             "title": "Little Paws",
             "pictures": [
                 "https://i.imgur.com/SFT40oS.jpeg"
@@ -31,6 +32,7 @@ pet_stores_list = [
             ]
         },
         "properties": {
+            "key": "paleto_pets",
             "title": "Paleto Pets",
             "pictures": [
                 "https://i.imgur.com/3RVy5OX.jpeg"

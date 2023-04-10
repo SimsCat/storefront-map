@@ -88,24 +88,64 @@ function create_marker_list(current_store_list, matching_icon) {
     return current_markers;
 }
 
+function convert_title_to_key(title) {
+    // need to declare as String to avoid errors
+    title = String(title)
+    // lower case all
+    var lower_title = title.toLowerCase();
+    // remove special chars
+    var key = lower_title.replace(/[^\w\s]/gi, "");
+    // replace space with _
+    key = key.replace(/[\s]/gi, "_");
+    return key;
+}
+
 function convert_stores_togeos(stores) {
     // convert to geogjson
     var current_geos = []
     stores.forEach(function (item, index) {
-        //console.log(item, index);
 
-        current_geo = {
+        var current_geo = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [item.y, item.x]
             },
             "properties": {
-                "key": item.key,
                 "title": item.title,
                 "pictures": item.pictures,
                 "description": item.description,
                 "wheelchair": item.wheelchair,
+                //"popupContent": "shrugtest-donotuseanduseotherfunction",
+                //"Owner Full Name": "",
+                //"Owner State ID": "",
+                //"OWner P#": "",
+                // deal with coloured icon
+            }
+        }
+        current_geos.push(current_geo)
+    });
+    return current_geos
+}
+
+function update_stores_togeos(stores) {
+    // convert to geogjson
+    var current_geos = []
+    stores.forEach(function (item, index) {
+        item_properties = item.properties;
+
+        var current_geo = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": item.geometry.coordinates
+            },
+            "properties": {
+                "key": convert_title_to_key(item_properties.title),
+                "title": item_properties.title,
+                "pictures": item_properties.pictures,
+                "description": item_properties.description,
+                "wheelchair": item_properties.wheelchair,
                 //"popupContent": "shrugtest-donotuseanduseotherfunction",
                 //"Owner Full Name": "",
                 //"Owner State ID": "",
@@ -121,8 +161,7 @@ function convert_stores_togeos(stores) {
 }
 
 function onEachFeature(feature, layer) {
-    // does this feature have a property named popupContent?
-    //console.log("onEachFeature test")
+    // if properties exist (as it should), create marker_str
     if (feature.properties) {
         marker_str = create_marker_str(
             feature.properties.title,
@@ -130,8 +169,7 @@ function onEachFeature(feature, layer) {
             feature.properties.pictures,
             feature.properties.wheelchair
         )
-        //console.log("onEachFeature test2 ", marker_str)
-        //marker_str = "HAmish"
+        //console.log("onEachFeature check marker_str: ", marker_str)
         layer.bindPopup(
             marker_str
         );

@@ -10,6 +10,7 @@ recreational_stores_list = [
             ]
         },
         "properties": {
+            "key": "horage",
             "title": "HORAGE",
             "pictures": null,
             "description": null,
@@ -29,6 +30,7 @@ recreational_stores_list = [
             ]
         },
         "properties": {
+            "key": "bongjour",
             "title": "Bongjour",
             "pictures": [
                 "https://i.imgur.com/DvkG1sg.jpeg"
@@ -50,6 +52,7 @@ recreational_stores_list = [
             ]
         },
         "properties": {
+            "key": "pitchers_vinewood",
             "title": "Pitchers Vinewood",
             "pictures": null,
             "description": null,
@@ -69,6 +72,7 @@ recreational_stores_list = [
             ]
         },
         "properties": {
+            "key": "oak_and_dagger",
             "title": "Oak and Dagger",
             "pictures": null,
             "description": null,
@@ -88,6 +92,7 @@ recreational_stores_list = [
             ]
         },
         "properties": {
+            "key": "the_dmarie_johnson_memorial_facility_for_correctional_training",
             "title": "The D'Marie Johnson Memorial Facility for Correctional Training",
             "pictures": [
                 "https://i.imgur.com/RyQ1M0c.png"
@@ -109,6 +114,7 @@ recreational_stores_list = [
             ]
         },
         "properties": {
+            "key": "siren_radio",
             "title": "Siren Radio",
             "pictures": [
                 "https://i.imgur.com/VAC54yv.png"
@@ -130,6 +136,7 @@ recreational_stores_list = [
             ]
         },
         "properties": {
+            "key": "artist_studio",
             "title": "Artist Studio",
             "pictures": null,
             "description": "Gallery and Museum!",
@@ -149,6 +156,7 @@ recreational_stores_list = [
             ]
         },
         "properties": {
+            "key": "san_andreas_scouts",
             "title": "San Andreas Scouts",
             "pictures": [
                 "https://cdn.discordapp.com/attachments/1073047874314702848/1073047979470094367/unknown.png"
@@ -170,6 +178,7 @@ recreational_stores_list = [
             ]
         },
         "properties": {
+            "key": "wyld_chyld",
             "title": "Wyld Chyld",
             "pictures": null,
             "description": null,
@@ -189,6 +198,7 @@ recreational_stores_list = [
             ]
         },
         "properties": {
+            "key": "nopixel_trading_cards",
             "title": "Nopixel Trading Cards",
             "pictures": [
                 "https://i.imgur.com/jo6W0vY.jpeg"

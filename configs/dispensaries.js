@@ -10,6 +10,7 @@ dispensaries_list = [
             ]
         },
         "properties": {
+            "key": "roosters_reef",
             "title": "Rooster's Reef",
             "pictures": null,
             "description": "Joints and Coffee, what else could you ask for?",
@@ -29,6 +30,7 @@ dispensaries_list = [
             ]
         },
         "properties": {
+            "key": "deja_brew",
             "title": "Deja Brew",
             "pictures": [
                 "https://i.imgur.com/AzWTNH4.png"
@@ -50,6 +52,7 @@ dispensaries_list = [
             ]
         },
         "properties": {
+            "key": "smoke_on_the_water",
             "title": "Smoke On The Water",
             "pictures": [
                 "https://i.imgur.com/cBLRyHu.jpeg"

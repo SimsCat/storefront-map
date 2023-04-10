@@ -11,24 +11,25 @@
             background-color: #0fa8d2;
         }
     </style>
-        <script type="text/javascript" src="./src/icons.js"></script>
-        <script type="text/javascript" src="./configs/restaurants.js"></script>
-        <script type="text/javascript" src="./configs/corner_stores.js"></script>
-        <script type="text/javascript" src="./configs/novelty_shops.js"></script>
-        <script type="text/javascript" src="./configs/dispensaries.js"></script>
-        <script type="text/javascript" src="./configs/supply_stores.js"></script>
-        <script type="text/javascript" src="./configs/pet_stores.js"></script>
-        <script type="text/javascript" src="./configs/recreational_stores.js"></script>
-        <script type="text/javascript" src="./configs/electronics_stores.js"></script>
-        <script type="text/javascript" src="./configs/coffee_houses.js"></script>
-        <script type="text/javascript" src="./configs/repair_shops.js"></script>
-        <script type="text/javascript" src="./configs/wheelchair_key_mapping.js"></script>
-        <script type="text/javascript" src="./src/utils.js"></script>
+
+    <link rel="stylesheet" href="src/search/leaflet-search.css"/>
+    <script src="src/search/leaflet-search.js"></script>
+    <script type="text/javascript" src="./src/icons.js"></script>
+    <script type="text/javascript" src="./configs/restaurants.js"></script>
+    <script type="text/javascript" src="./configs/corner_stores.js"></script>
+    <script type="text/javascript" src="./configs/novelty_shops.js"></script>
+    <script type="text/javascript" src="./configs/dispensaries.js"></script>
+    <script type="text/javascript" src="./configs/supply_stores.js"></script>
+    <script type="text/javascript" src="./configs/pet_stores.js"></script>
+    <script type="text/javascript" src="./configs/recreational_stores.js"></script>
+    <script type="text/javascript" src="./configs/electronics_stores.js"></script>
+    <script type="text/javascript" src="./configs/coffee_houses.js"></script>
+    <script type="text/javascript" src="./configs/repair_shops.js"></script>
+    <script type="text/javascript" src="./configs/wheelchair_key_mapping.js"></script>
+    <script type="text/javascript" src="./src/utils.js"></script>
 </head>
 <body>
     <div id = "map"></div>
-
-
     <script>
         /*==================== GTA Map ====================*/
         var map = L.map('map', {
@@ -58,11 +59,17 @@
             repair_shops_list
         ]
 
+        // create from standard markers
         store_list_geos.forEach(function (item, index) {
             console.log("geojsons ", convert_stores_togeos(item));
         });
-
+        
+        // updated existing geojsons
+        store_list_geos.forEach(function (item, index) {
+            console.log("geojsons ", update_stores_togeos(item));
+        });
         */
+
         /*==================== Icons ====================*/
 
         // Icons now imported at the top
@@ -111,18 +118,9 @@
         //var norman = L.marker([5930, 5870]).bindPopup('Normans Dumbass House').addTo(map);
         //var center = L.marker ([4000, 4000]).bindPopup('Center of Map').addTo(map);
         /*==================== Layers ====================*/
-        /*
-        var cornerStores = L.layerGroup(corner_stores_markers);
-        //var restaurants = L.layerGroup(restaurants_markers);
-        var noveltyShops = L.layerGroup(novelty_shops_markers);
-        var dispensaries = L.layerGroup(dispensaries_markers);
-        var hardwareStores = L.layerGroup(supply_stores_markers);
-        var petStores = L.layerGroup(pet_stores_markers);
-        var recreation = L.layerGroup(recreational_stores_markers);
-        var electronics = L.layerGroup(electronics_stores_markers);
-        var coffee_houses = L.layerGroup(coffee_houses_markers);
-        var repairShop = L.layerGroup(repair_shops_markers);
-        */
+
+        // included in the above
+
         /*==================== Leaflet Layer Control ====================*/
         map.addLayer(restaurants_layer);
         map.addLayer(corner_stores_layer);
@@ -148,16 +146,60 @@
             'Mechanics & Repair Shops': repair_shops_layer,
         };
 
+        // group layers for search bar
+        var group = new L.FeatureGroup()
+        group.addLayer(restaurants_layer);
+        group.addLayer(corner_stores_layer);
+        group.addLayer(novelty_shops_layer);
+        group.addLayer(dispensaries_layer);
+        group.addLayer(supply_stores_layer);
+        group.addLayer(pet_stores_layer);
+        group.addLayer(recreational_stores_layer);
+        group.addLayer(electronics_stores_layer);
+        group.addLayer(coffee_houses_layer);
+        group.addLayer(repair_shops_layer);
+
         L.control.layers(0, overlayMaps).addTo(map);
 
+        var searchControl = new L.Control.Search({
+            layer: group,
+            propertyName: 'key',
+            marker: false,
+            position: "topright",
+            moveToLocation: function(latlng, title, map) {
+                //map.fitBounds( latlng.layer.getBounds() );
+                //var zoom = map.getBoundsZoom(latlng.layer.getBounds());
+                //map.setView(latlng, zoom); // access the zoom
+            }
+        });
+
+        searchControl.on('search:locationfound', function(e) {
+            console.log('search:locationfound', e);
+
+            //map.removeLayer(this._markerSearch)
+
+            //e.layer.setStyle({fillColor: '#3f0', color: '#0f0'});
+            if(e.layer._popup)
+                e.layer.openPopup();
+
+        }).on('search:collapsed', function(e) {
+
+            /*map.eachLayer(function(layer) {	//restore feature color
+                map.resetStyle(layer);
+            });*/	
+            //if(e.layer._popup)
+            //    e.layer.closePopup();
+        });
+        
+        map.addControl( searchControl );  //inizialize search control
     </script>
     <div class="authors">
         <!--             This site is still a work in progress, contact The Authors>@MelarkyNP / @TheThirdWheelFM on Twitter <br>or Attend Dant in-city or Ham#2848 On Discord for info/attribution to your storefront's marker! -->
-        <h2>
+        <h3>
             This site is still a work in progress, contact the authors below for info/attribution to your storefront's marker!<br>
             Author 1: @MelarkyNP on Twitter,<br>
             Author 2: Atten Dant in-city / @thethirdwheelfm on Twitter / Ham#2848 On Discord.
-        </h2>
+        </h3>
     </div>
 </body>
 </html>

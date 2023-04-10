@@ -10,6 +10,7 @@ electronics_stores_list = [
             ]
         },
         "properties": {
+            "key": "digital_den_mirror_park",
             "title": "Digital Den (Mirror Park)",
             "pictures": null,
             "description": null,
@@ -29,6 +30,7 @@ electronics_stores_list = [
             ]
         },
         "properties": {
+            "key": "digital_den_little_seoul",
             "title": "Digital Den (Little Seoul)",
             "pictures": null,
             "description": null,
@@ -48,6 +50,7 @@ electronics_stores_list = [
             ]
         },
         "properties": {
+            "key": "ericsons_electronics",
             "title": "Ericson's Electronics",
             "pictures": null,
             "description": null,
@@ -67,6 +70,7 @@ electronics_stores_list = [
             ]
         },
         "properties": {
+            "key": "amazoom",
             "title": "Amazoom",
             "pictures": null,
             "description": "Electronics N Stuff",
@@ -86,6 +90,7 @@ electronics_stores_list = [
             ]
         },
         "properties": {
+            "key": "rat_shack",
             "title": "Rat Shack",
             "pictures": [
                 "https://i.imgur.com/QecUNLU.png"
