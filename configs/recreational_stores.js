@@ -199,7 +199,7 @@ recreational_stores_list = [
         },
         "properties": {
             "key": "nopixel_trading_cards",
-            "title": "Nopixel Trading Cards",
+            "title": "NoPixel Trading Cards",
             "pictures": [
                 "https://i.imgur.com/jo6W0vY.jpeg"
             ],

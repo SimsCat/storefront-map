@@ -96,7 +96,9 @@ restaurants_list = [
         "properties": {
             "key": "burgershot",
             "title": "Burgershot",
-            "pictures": null,
+            "pictures": [
+            "https://i.imgur.com/iShnVcB.png"
+            ],
             "description": "Don't do Murder, Eat a Burger!",
             "wheelchair": {
                 "rating": 0,
