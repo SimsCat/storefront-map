@@ -209,5 +209,25 @@ recreational_stores_list = [
                 "version": null
             }
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4735,
+                5795
+            ]
+        },
+        "properties": {
+            "key": "mcnab_tours",
+            "title": "McNab Tours",
+            "pictures": null,
+            "description": "Teaching you to hunt ",
+            "wheelchair": {
+                "rating": 0,
+                "version": null
+            }
+        }
     }
 ]

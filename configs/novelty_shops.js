@@ -334,5 +334,47 @@ novelty_shops_list = [
                 "version": null
             }
         }
-    }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                3932,
+                2810
+            ]
+        },
+        "properties": {
+            "key": "caddys_corner",
+            "title": "Caddys Corner",
+            "pictures": [
+                "https://i.imgur.com/iAc3kfl.jpg"
+            ],
+            "description": "Oddities, Smokes and Booba Pillows",
+            "wheelchair": {
+                "rating": 0,
+                "version": null
+            }
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                2958,
+                1735
+            ]
+        },
+        "properties": {
+            "key": "son_of_a_beach",
+            "title": "Son of a Beach",
+            "pictures": null,
+            "description": "Instruments and Music Supplies!",
+            "wheelchair": {
+                "rating": 0,
+                "version": null
+            }
+        }
+    },
 ]
