@@ -395,5 +395,5 @@ supply_stores_list = [
                 "version": null
             }
         }
-    },
+    }
 ]

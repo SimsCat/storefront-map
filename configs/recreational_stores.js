@@ -229,5 +229,5 @@ recreational_stores_list = [
                 "version": null
             }
         }
-    },
+    }
 ]
