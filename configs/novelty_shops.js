@@ -370,7 +370,7 @@ novelty_shops_list = [
             "key": "son_of_a_beach",
             "title": "Son of a Beach",
             "pictures": null,
-            "description": "Instruments and Music Supplies!",
+            "description": "Beach Gear",
             "wheelchair": {
                 "rating": 0,
                 "version": null
