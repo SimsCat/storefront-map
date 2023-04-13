@@ -35,7 +35,7 @@ novelty_shops_list = [
         "properties": {
             "key": "plus_one",
             "title": "Plus One",
-            "pictures": null,
+            "pictures": "https://i.imgur.com/1PQPM7O.png",
             "description": null,
             "wheelchair": {
                 "rating": 0,
