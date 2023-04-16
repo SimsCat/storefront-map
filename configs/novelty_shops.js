@@ -379,4 +379,24 @@ novelty_shops_list = [
             }
         }
     },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                1631,
+                3310
+            ]
+        },
+        "properties": {
+            "key": "bear_necessities",
+            "title": "Bear Necessities",
+            "pictures": null,
+            "description": "A place for all your cuddly needs",
+            "wheelchair": {
+                "rating": 0,
+                "version": null
+            }
+        }
+    },
 ]

@@ -391,9 +391,31 @@ supply_stores_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 3,
+                "rating": 0,
                 "version": null
             }
         }
-    }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                1636,
+                3283
+            ]
+        },
+        "properties": {
+            "key": "chu-tools",
+            "title": "Chu-Tools",
+            "pictures": [
+                "https://imgur.com/a/xVGEMIb"
+            ],
+            "description": "Hardware and Supplies brought to you by Bachu and Friends",
+            "wheelchair": {
+                "rating": 0,
+                "version": null
+            }
+        }
+    },
 ]
