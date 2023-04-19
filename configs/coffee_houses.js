@@ -15,7 +15,7 @@ coffee_houses_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
@@ -75,8 +75,8 @@ coffee_houses_list = [
             "pictures": null,
             "description": "Coffee & Cigarettes",
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 3,
+                "version": "V3"
             }
         }
     },
@@ -95,8 +95,8 @@ coffee_houses_list = [
             "pictures": null,
             "description": "https://i.imgur.com/t8ECMch.jpeg",
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 3,
+                "version": "V3"
             }
         }
     },
@@ -115,7 +115,7 @@ coffee_houses_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
