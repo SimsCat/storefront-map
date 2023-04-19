@@ -18,8 +18,8 @@ novelty_shops_list = [
             ],
             "description": "We're Always Open!",
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 3,
+                "version": "V1"
             }
         }
     },
@@ -40,8 +40,8 @@ novelty_shops_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 3,
+                "version": "V3"
             }
         }
     },
@@ -62,8 +62,8 @@ novelty_shops_list = [
             ],
             "description": "A plushie for every occasion!",
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 3,
+                "version": "V1"
             }
         }
     },
@@ -82,8 +82,8 @@ novelty_shops_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 4,
+                "version": "V2"
             }
         }
     },
@@ -102,8 +102,8 @@ novelty_shops_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 3,
+                "version": "V2"
             }
         }
     },
@@ -122,8 +122,8 @@ novelty_shops_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 3,
+                "version": "V2"
             }
         }
     },
@@ -142,8 +142,8 @@ novelty_shops_list = [
             "pictures": null,
             "description": "Spooky Solutions and Ghost Tours!",
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 4,
+                "version": "V1"
             }
         }
     },
@@ -182,7 +182,7 @@ novelty_shops_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
@@ -202,7 +202,7 @@ novelty_shops_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
@@ -222,8 +222,8 @@ novelty_shops_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 3,
+                "version": "V2"
             }
         }
     },
@@ -244,8 +244,8 @@ novelty_shops_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 3,
+                "version": "V4"
             }
         }
     },
@@ -266,7 +266,7 @@ novelty_shops_list = [
             ],
             "description": "Wicked Skateboards!",
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
@@ -288,7 +288,7 @@ novelty_shops_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
@@ -310,8 +310,8 @@ novelty_shops_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 3,
+                "version": "V2"
             }
         }
     },
@@ -332,8 +332,8 @@ novelty_shops_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 3,
+                "version": "V3"
             }
         }
     },
@@ -354,7 +354,7 @@ novelty_shops_list = [
             ],
             "description": "Oddities, Smokes and Booba Pillows",
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
@@ -374,7 +374,7 @@ novelty_shops_list = [
             "pictures": null,
             "description": "Beach Gear",
             "wheelchair": {
-                "rating": 0,
+                "rating": 1,
                 "version": null
             }
         }
@@ -394,7 +394,7 @@ novelty_shops_list = [
             "pictures": null,
             "description": "A place for all your cuddly needs",
             "wheelchair": {
-                "rating": 0,
+                "rating": 1,
                 "version": null
             }
         }
