@@ -18,7 +18,7 @@ supply_stores_list = [
             "description": null,
             "wheelchair": {
                 "rating": 4,
-                "version": null
+                "version": "V4"
             }
         }
     },
@@ -38,7 +38,7 @@ supply_stores_list = [
             "description": null,
             "wheelchair": {
                 "rating": 3,
-                "version": null
+                "version": "V1"
             }
         }
     },
@@ -78,7 +78,7 @@ supply_stores_list = [
             "description": "Bike Armor and Repair Kits!",
             "wheelchair": {
                 "rating": 3,
-                "version": null
+                "version": "V3"
             }
         }
     },
@@ -98,7 +98,7 @@ supply_stores_list = [
             "description": null,
             "wheelchair": {
                 "rating": 4,
-                "version": null
+                "version": "V2"
             }
         }
     },
@@ -118,7 +118,7 @@ supply_stores_list = [
             "description": "Lights, Cameras, Microphones, Action!",
             "wheelchair": {
                 "rating": 2,
-                "version": null
+                "version": "V2"
             }
         }
     },
@@ -138,7 +138,7 @@ supply_stores_list = [
             "description": "A Bee Keeper Paradise!",
             "wheelchair": {
                 "rating": 4,
-                "version": null
+                "version": "V1"
             }
         }
     },
@@ -158,7 +158,7 @@ supply_stores_list = [
             "description": null,
             "wheelchair": {
                 "rating": 4,
-                "version": null
+                "version": "V3"
             }
         }
     },
@@ -178,7 +178,7 @@ supply_stores_list = [
             "description": null,
             "wheelchair": {
                 "rating": 4,
-                "version": null
+                "version": "V3"
             }
         }
     },
@@ -260,7 +260,7 @@ supply_stores_list = [
             "description": null,
             "wheelchair": {
                 "rating": 4,
-                "version": null
+                "version": "V2"
             }
         }
     },
@@ -304,7 +304,7 @@ supply_stores_list = [
             "description": null,
             "wheelchair": {
                 "rating": 3,
-                "version": null
+                "version": "V1"
             }
         }
     },
@@ -326,7 +326,7 @@ supply_stores_list = [
             "description": null,
             "wheelchair": {
                 "rating": 4,
-                "version": null
+                "version": "V1"
             }
         }
     },
@@ -347,7 +347,7 @@ supply_stores_list = [
             ],
             "description": "<strike>Sai Carter's</strike> Flop Dugong's Gun Emporium",
             "wheelchair": {
-                "rating": 0,
+                "rating": 4,
                 "version": null
             }
         }
@@ -370,7 +370,7 @@ supply_stores_list = [
             "description": null,
             "wheelchair": {
                 "rating": 3,
-                "version": null
+                "version": "V3"
             }
         }
     },
@@ -414,7 +414,7 @@ supply_stores_list = [
             "description": "Hardware and Supplies brought to you by Bachu and Friends",
             "wheelchair": {
                 "rating": 3,
-                "version": null
+                "version": "V3"
             }
         }
     },
