@@ -15,8 +15,8 @@ repair_shops_list = [
             "pictures": null,
             "description": "We're Always Open!",
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 4,
+                "version": "V2"
             }
         }
     },
@@ -37,7 +37,7 @@ repair_shops_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 3,
                 "version": null
             }
         }
@@ -59,8 +59,8 @@ repair_shops_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 4,
+                "version": "V2"
             }
         }
     },
@@ -79,7 +79,7 @@ repair_shops_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 4,
                 "version": null
             }
         }
