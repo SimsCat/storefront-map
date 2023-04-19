@@ -17,7 +17,7 @@ supply_stores_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 4,
                 "version": null
             }
         }
@@ -37,7 +37,7 @@ supply_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 2.5,
+                "rating": 3,
                 "version": null
             }
         }
@@ -57,7 +57,7 @@ supply_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
@@ -77,7 +77,7 @@ supply_stores_list = [
             "pictures": null,
             "description": "Bike Armor and Repair Kits!",
             "wheelchair": {
-                "rating": 0,
+                "rating": 3,
                 "version": null
             }
         }
@@ -97,7 +97,7 @@ supply_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 4,
                 "version": null
             }
         }
@@ -117,7 +117,7 @@ supply_stores_list = [
             "pictures": null,
             "description": "Lights, Cameras, Microphones, Action!",
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
@@ -137,7 +137,7 @@ supply_stores_list = [
             "pictures": null,
             "description": "A Bee Keeper Paradise!",
             "wheelchair": {
-                "rating": 3,
+                "rating": 4,
                 "version": null
             }
         }
@@ -157,7 +157,7 @@ supply_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 3,
+                "rating": 4,
                 "version": null
             }
         }
@@ -177,7 +177,7 @@ supply_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 3,
+                "rating": 4,
                 "version": null
             }
         }
@@ -197,7 +197,7 @@ supply_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
@@ -237,7 +237,7 @@ supply_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
@@ -259,7 +259,7 @@ supply_stores_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 3,
+                "rating": 4,
                 "version": null
             }
         }
@@ -303,7 +303,7 @@ supply_stores_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 3,
                 "version": null
             }
         }
@@ -325,7 +325,7 @@ supply_stores_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 4,
                 "version": null
             }
         }
@@ -369,7 +369,7 @@ supply_stores_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 3,
                 "version": null
             }
         }
@@ -391,7 +391,7 @@ supply_stores_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 3,
                 "version": null
             }
         }
@@ -413,7 +413,7 @@ supply_stores_list = [
             ],
             "description": "Hardware and Supplies brought to you by Bachu and Friends",
             "wheelchair": {
-                "rating": 0,
+                "rating": 3,
                 "version": null
             }
         }
