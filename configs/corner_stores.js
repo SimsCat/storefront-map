@@ -18,8 +18,8 @@ corner_stores_list = [
             ],
             "description": "Bandages, Plot Armor, and Copium, Oh My!",
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 4,
+                "version": "V1"
             }
         }
     },
@@ -38,8 +38,8 @@ corner_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 4,
+                "version": "V1"
             }
         }
     },
@@ -58,8 +58,8 @@ corner_stores_list = [
             "pictures": null,
             "description": "Custom Patches and Bandages!",
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 3,
+                "version": "V1"
             }
         }
     },
@@ -81,8 +81,8 @@ corner_stores_list = [
             ],
             "description": "Medically Beneficial Candies!",
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 3,
+                "version": "V3"
             }
         }
     },
@@ -101,7 +101,7 @@ corner_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
@@ -121,7 +121,7 @@ corner_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
@@ -141,7 +141,7 @@ corner_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 1,
                 "version": null
             }
         }
@@ -163,8 +163,8 @@ corner_stores_list = [
             ],
             "description": "Grab a Coffee and read a great book!",
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 3,
+                "version": "V2"
             }
         }
     }
