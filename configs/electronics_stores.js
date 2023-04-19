@@ -15,7 +15,7 @@ electronics_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 1,
                 "version": null
             }
         }
@@ -35,8 +35,8 @@ electronics_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 4,
+                "version": "V1"
             }
         }
     },
@@ -55,8 +55,8 @@ electronics_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 4,
+                "version": "V3"
             }
         }
     },
@@ -75,8 +75,8 @@ electronics_stores_list = [
             "pictures": null,
             "description": "Electronics N Stuff",
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 4,
+                "version": "V1"
             }
         }
     },
@@ -97,7 +97,7 @@ electronics_stores_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
