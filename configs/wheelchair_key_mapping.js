@@ -20,11 +20,11 @@ wheelchair_key_mapping = {
             "text": "Level interior and exterior. Internal access limited.",
             "colour": "#99FF00"
         },
-        2.5: {
+        3: {
             "text": "Level interior, exterior and internally accessible for customers NOT employees.",
             "colour": "#55FF00"
         },
-        3: {
+        4: {
             "text": "Level interior, exterior and internally accessible for customers and employees.",
             "colour": "#00FF00"
         }
