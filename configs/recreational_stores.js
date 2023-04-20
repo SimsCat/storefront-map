@@ -15,7 +15,7 @@ recreational_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
@@ -37,8 +37,8 @@ recreational_stores_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 4,
+                "version": "V2"
             }
         }
     },
@@ -57,7 +57,7 @@ recreational_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
@@ -77,7 +77,7 @@ recreational_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 3,
                 "version": null
             }
         }
@@ -99,7 +99,7 @@ recreational_stores_list = [
             ],
             "description": "For DOC Training and More!",
             "wheelchair": {
-                "rating": 0,
+                "rating": 1,
                 "version": null
             }
         }
@@ -121,7 +121,7 @@ recreational_stores_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
@@ -141,8 +141,8 @@ recreational_stores_list = [
             "pictures": null,
             "description": "Gallery and Museum!",
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 3,
+                "version": "V3"
             }
         }
     },
@@ -163,7 +163,7 @@ recreational_stores_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 4,
                 "version": null
             }
         }
@@ -183,7 +183,7 @@ recreational_stores_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 3,
                 "version": null
             }
         }
@@ -205,7 +205,7 @@ recreational_stores_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
@@ -225,7 +225,7 @@ recreational_stores_list = [
             "pictures": null,
             "description": "Teaching you to hunt ",
             "wheelchair": {
-                "rating": 0,
+                "rating": 1,
                 "version": null
             }
         }

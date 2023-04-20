@@ -15,7 +15,7 @@ dispensaries_list = [
             "pictures": null,
             "description": "Joints and Coffee, what else could you ask for?",
             "wheelchair": {
-                "rating": 0,
+                "rating": 1,
                 "version": null
             }
         }
@@ -37,7 +37,7 @@ dispensaries_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
+                "rating": 2,
                 "version": null
             }
         }
@@ -59,8 +59,8 @@ dispensaries_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 4,
+                "version": "V1"
             }
         }
     }

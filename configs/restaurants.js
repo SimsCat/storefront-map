@@ -17,7 +17,7 @@ restaurants_list = [
             ],
             "description": "We're Always* Open!",
             "wheelchair": {
-                "rating": 3,
+                "rating": 4,
                 "version": "V1"
             }
         }
@@ -79,7 +79,7 @@ restaurants_list = [
             "pictures": null,
             "description": "Have an UwU day!",
             "wheelchair": {
-                "rating": 3,
+                "rating": 4,
                 "version": "V1"
             }
         }
@@ -101,8 +101,8 @@ restaurants_list = [
             ],
             "description": "Don't do Murder, Eat a Burger!",
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 2,
+                "version": "V3"
             }
         }
     },
@@ -121,8 +121,8 @@ restaurants_list = [
             "pictures": null,
             "description": "It's Femly",
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 3,
+                "version": "V1"
             }
         }
     },

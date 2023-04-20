@@ -17,8 +17,8 @@ pet_stores_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 1,
+                "version": "V2"
             }
         }
     },
@@ -39,8 +39,8 @@ pet_stores_list = [
             ],
             "description": null,
             "wheelchair": {
-                "rating": 0,
-                "version": null
+                "rating": 3,
+                "version": "V1"
             }
         }
     }
