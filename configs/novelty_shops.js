@@ -82,7 +82,7 @@ novelty_shops_list = [
             "pictures": null,
             "description": null,
             "wheelchair": {
-                "rating": 4,
+                "rating": 3,
                 "version": "V2"
             }
         }
