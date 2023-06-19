@@ -63,5 +63,27 @@ dispensaries_list = [
                 "version": "V1"
             }
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4752,
+                5722
+            ]
+        },
+        "properties": {
+            "key": "silver_moon_smoke_shop",
+            "title": "Silver Moon Smoke Shop",
+            "pictures": [
+                "https://i.imgur.com/g5aElhQ.png"
+            ],
+            "description": null,
+            "wheelchair": {
+                "rating": 0,
+                "version": "V1"
+            }
+        }
     }
 ]
