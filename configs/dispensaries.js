@@ -82,7 +82,7 @@ dispensaries_list = [
             "description": null,
             "wheelchair": {
                 "rating": 0,
-                "version": "V1"
+                "version": null
             }
         }
     }
